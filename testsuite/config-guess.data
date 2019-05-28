@@ -44,6 +44,7 @@ i386 | 1.0 | MINGW | ignored | ignored | i386-pc-mingw32
 i386 | 1.0 | Minix | ignored | ignored | i386-unknown-minix
 i386 | 1.0 | Sortix | ignored | ignored | i386-unknown-sortix
 i386 | 12.1 | AROS | ignored | ignored | i386-pc-aros
+i386 | 14.0 | Darwin | ignored | i386 | i386-apple-darwin14.0
 i386 | 4.0 | DYNIX/ptx | ignored | ignored | i386-sequent-sysv4
 i386 | 4.2 | LynxOS | ignored | ignored | i386-unknown-lynxos4.2
 i386 | ignored | VOS | ignored | ignored | i386-stratus-vos
@@ -83,6 +84,7 @@ or1knd | ignored | Linux | ignored | ignored | or1knd-unknown-linux-gnu
 or32 | ignored | Linux | ignored | ignored | or32-unknown-linux-gnu
 padre | 2.6.15 | Linux | ignored | ignored | sparc-unknown-linux-gnu
 pc | 1.0 | ignored | ignored | ignored | i586-pc-msdosdjgpp
+powerpc | 14.0 | Darwin | ignored | powerpc | powerpc-apple-darwin14.0
 PowerPC | 4.2 | LynxOS | ignored | ignored | powerpc-unknown-lynxos4.2
 ppc | 2.6.9-22 | Linux | ignored | ignored | powerpc-unknown-linux-gnu
 ppc64 | 2.6.9-22 | Linux | ignored | ignored | powerpc64-unknown-linux-gnu
@@ -114,4 +116,5 @@ x86_64 | 1.5.18(0.132/4/2) | CYGWIN_NT-5.2 | ignored | ignored | x86_64-pc-cygwi
 x86_64 | 2.0.0(0.271/5/3) | MSYS_NT-6.1 | ignored | ignored | x86_64-pc-msys
 x86_64 | 2.6.32 | Linux | ignored | ignored | x86_64-pc-linux-gnu
 x86_64 | 2.6.32 | VMkernel | ignored | ignored | x86_64-unknown-esx
+x86_64 | 14.0 | Darwin | ignored | i386 | x86_64-apple-darwin14.0
 xtensa | 2.6.15 | Linux | ignored | ignored | xtensa-unknown-linux-gnu
