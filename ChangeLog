@@ -1,5 +1,13 @@
 2019-05-28  Ben Elliston  <bje@gnu.org>
 
+	* config.guess (*:Darwin:*:*): Run xcode-select to determine if a
+	system compiler is installed. If not, do not run set_cc_for_build,
+	as the default cc will open a dialog box asking to install
+	Xcode. If no C compiler is available, guess based on uname -p and
+	uname -m.
+
+2019-05-28  Ben Elliston  <bje@gnu.org>
+
 	* testsuite/config-guess.data: Add Darwin tests.
 
 2019-05-28  Ben Elliston  <bje@gnu.org>
