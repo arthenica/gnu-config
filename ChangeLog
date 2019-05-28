@@ -1,3 +1,7 @@
+2019-05-28  Ben Elliston  <bje@gnu.org>
+
+	* config.guess (*:Darwin:*:*): Simplify UNAME_PROCESSOR.
+
 2019-05-23  Jose E. Marchesi  <jose.marchesi@oracle.com>
 
 	* config.sub (bpf): Recognise.
