@@ -1330,7 +1330,6 @@ EOF
 	case $UNAME_PROCESSOR in
 	    unknown) UNAME_PROCESSOR=powerpc ;;
 	esac
-	fi
 	if test "`echo "$UNAME_RELEASE" | sed -e 's/\..*//'`" -le 10 ; then
 	    if [ "$CC_FOR_BUILD" != no_compiler_found ]; then
 		if (echo '#ifdef __LP64__'; echo IS_64BIT_ARCH; echo '#endif') | \
