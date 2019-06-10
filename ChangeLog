@@ -1,3 +1,8 @@
+2019-06-10  Ben Elliston  <bje@gnu.org>
+
+	* config.guess (*:OS108:*:*): Recognise new OS.
+	* testsuite/config-guess.data: Add a test case.
+
 2019-06-04  Ben Elliston  <bje@gnu.org>
 
 	* Makefile (sort): New target.
