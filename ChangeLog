@@ -1,5 +1,10 @@
 2019-06-26  Ben Elliston  <bje@gnu.org>
 
+	* testsuite/config-sub.data: Many more missing test cases.
+	* config.sub (hp300): Set $os to hpux.
+
+2019-06-26  Ben Elliston  <bje@gnu.org>
+
 	* testsuite/config-sub.data: Add some missing test cases.
 
 2019-06-26  Ben Elliston  <bje@gnu.org>
