@@ -1,5 +1,9 @@
 2019-06-26  Ben Elliston  <bje@gnu.org>
 
+	* testsuite/config-sub.data: Add some missing test cases.
+
+2019-06-26  Ben Elliston  <bje@gnu.org>
+
 	* config.sub (vsta): Move into alphabetical order.
 
 2019-06-10  Ben Elliston  <bje@gnu.org>
