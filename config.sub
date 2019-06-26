@@ -360,10 +360,6 @@ case $1 in
 				basic_machine=i386-mach
 				os=mach
 				;;
-			vsta)
-				basic_machine=i386-pc
-				os=vsta
-				;;
 			isi68 | isi)
 				basic_machine=m68k-isi
 				os=sysv
@@ -611,6 +607,10 @@ case $1 in
 			vms)
 				basic_machine=vax-dec
 				os=vms
+				;;
+			vsta)
+				basic_machine=i386-pc
+				os=vsta
 				;;
 			vxworks960)
 				basic_machine=i960-wrs
