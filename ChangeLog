@@ -1,3 +1,8 @@
+2019-06-30  Ben Elliston  <bje@gnu.org>
+
+	* config.sub: Recognise os108*.
+	* testsuite/config-sub.data: Add a test case.
+
 2019-06-26  Ben Elliston  <bje@gnu.org>
 
 	* testsuite/config-sub.data: Many more missing test cases.
