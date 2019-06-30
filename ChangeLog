@@ -1,5 +1,13 @@
 2019-06-30  Ben Elliston  <bje@gnu.org>
 
+	* config.sub (case $os): Match nsk* and powerunix. Don't later
+	match nsk* and set os=nsk which removes the OS version number.
+	* testsuite/config-guess.data: Tweak Unleashed test case.
+	* testsuite/config-sub.sh (run_config_sub_with_guess_triplets):
+	New test.
+
+2019-06-30  Ben Elliston  <bje@gnu.org>
+
 	* config.sub: Recognise os108*.
 	* testsuite/config-sub.data: Add a test case.
 

@@ -88,10 +88,28 @@ run_config_sub_idempotent()
 	return $rc
 }
 
+run_config_sub_with_guess_triplets()
+{
+	local -i rc=0
+	numtests=0
+	name="canonicalise each config.guess testcase"
+
+	awk -F '|' '{ print $6 }' < config-guess.data | while read -r triplet ; do
+	    output=$(sh -eu ../config.sub "$triplet")
+	    if test "$triplet" != "$output" ; then
+		echo "FAIL: $triplet -> $output, but $triplet should map to itself"
+		rc=1
+	    fi
+	    numtests+=1
+	done
+	return $rc
+}
+
+
 declare -i rc=0 numtests
 declare name
 
-for testsuite in run_config_sub run_config_sub_idempotent ; do
+for testsuite in run_config_sub run_config_sub_idempotent run_config_sub_with_guess_triplets ; do
 	if $testsuite; then
 		$verbose || echo "PASS: config.sub $name ($numtests tests)"
 	else
