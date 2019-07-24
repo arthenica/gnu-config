@@ -1,3 +1,7 @@
+2019-07-24  Ben Elliston  <bje@gnu.org>
+
+	* config.guess (mips:OSF1:*.*): Whitespace cleanup.
+
 2019-06-30  Ben Elliston  <bje@gnu.org>
 
 	* config.sub (case $os): Match nsk* and powerunix. Don't later
