@@ -508,6 +508,11 @@ pc98-freebsd					i386-pc-freebsd
 pc98						i386-pc-none
 pdp10						pdp10-unknown-tops20
 pdp11						pdp11-dec-none
+pentium2					i686-unknown-none
+pentium3					i686-unknown-none
+pentium						i586-unknown-none
+pentiumii					i686-unknown-none
+pentiumiii					i686-unknown-none
 picochip					picochip-unknown-none
 pjl						pjl-unknown-none
 pj						pj-unknown-none
