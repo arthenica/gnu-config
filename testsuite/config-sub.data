@@ -568,6 +568,7 @@ riscv-company-elf				riscv-company-elf
 riscv-company-hcos				riscv-company-hcos
 riscv-elf					riscv-unknown-elf
 riscv-linux					riscv-unknown-linux-gnu
+riscv-twizzler					riscv-unknown-twizzler
 riscv						riscv-unknown-none
 rl78-linux					rl78-unknown-linux-gnu
 rl78						rl78-unknown-none
@@ -765,6 +766,7 @@ x86_64-pc-ptx					x86_64-pc-ptx
 x86_64-ptx					x86_64-pc-ptx
 x86_64-redox					x86_64-pc-redox
 x86_64-sortix					x86_64-pc-sortix
+x86_64-twizzler				x86_64-pc-twizzler
 x86_64-unknown-ptx				x86_64-sequent-ptx
 x86_64-windows					x86_64-pc-windows
 x86						x86-unknown-none

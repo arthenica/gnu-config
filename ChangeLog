@@ -1,3 +1,10 @@
+2019-09-12  Daniel Bittman  <danielbittman1@gmail.com>
+
+	* config.guess (*:Twizzler:*:*): New.
+	* config.sub (-twizzler*): New.
+	* testsuite/config-guess.data: Add test cases.
+	* testsuite/config-sub.data: Ditto.
+
 2019-08-04  Ben Elliston  <bje@gnu.org>
 
 	* testsuite/config-sub.data: Add some old Pentium test cases.
