@@ -568,8 +568,8 @@ riscv-company-elf				riscv-company-elf
 riscv-company-hcos				riscv-company-hcos
 riscv-elf					riscv-unknown-elf
 riscv-linux					riscv-unknown-linux-gnu
-riscv-twizzler					riscv-unknown-twizzler
 riscv						riscv-unknown-none
+riscv-twizzler					riscv-unknown-twizzler
 rl78-linux					rl78-unknown-linux-gnu
 rl78						rl78-unknown-none
 roadrunner					i386-sun-sunos4.0.2

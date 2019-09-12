@@ -1,3 +1,8 @@
+2019-09-12  Ben Elliston  <bje@gnu.org>
+
+	* testsuite/config-guess.data: Sort.
+	* testsuite/config-sub.data: Likewise.
+
 2019-09-12  Daniel Bittman  <danielbittman1@gmail.com>
 
 	* config.guess (*:Twizzler:*:*): New.
