@@ -1,7 +1,7 @@
 2019-12-21  Ben Elliston  <bje@gnu.org>
 
 	* config.guess (set_cc_for_build): Prevent multiple calls by
-	chechking if $tmp is already set. We can't check CC_FOR_BUILD as
+	checking if $tmp is already set. We can't check CC_FOR_BUILD as
 	the user may set it externally. Thanks to Torbjörn Granlund for
 	the bug report.
 
