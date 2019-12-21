@@ -1,3 +1,8 @@
+2019-12-21  Torbjörn Granlund  <tg@gmplib.org>
+
+	* config.guess (alpha:Linux:*:*): Guard against missing
+	/proc/cpuinfo by redirecting standard error to /dev/null.
+
 2019-09-12  Ben Elliston  <bje@gnu.org>
 
 	* testsuite/config-guess.data: Sort.
