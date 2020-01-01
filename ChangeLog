@@ -1,3 +1,10 @@
+2020-01-01  Ben Elliston  <bje@gnu.org>
+
+	* config.guess: Update copyright years.
+	* config.sub: Likewise.
+	* doc/config.guess.1: Regenerate.
+	* doc/config.sub.1: Likewise.
+
 2019-12-21  Ben Elliston  <bje@gnu.org>
 
 	* config.guess (set_cc_for_build): Prevent multiple calls by
