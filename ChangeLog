@@ -1,3 +1,9 @@
+2020-04-26  Ben Elliston  <bje@gnu.org>
+
+	* config.guess: Instruct the user to send information about their
+	system only if the script they are running has a timestamped year
+	of less than three years ago.
+
 2020-04-24  Ben Elliston  <bje@gnu.org>
 
 	Reported by Peter Eisentraut:
