@@ -17,6 +17,7 @@ aarch64_be-unknown-elf				aarch64_be-unknown-elf
 aarch64_be-unknown-linux			aarch64_be-unknown-linux-gnu
 aarch64-bme					aarch64-unknown-bme
 aarch64-elf					aarch64-unknown-elf
+aarch64-genode					aarch64-unknown-genode
 aarch64-linux					aarch64-unknown-linux-gnu
 aarch64-unknown-elf				aarch64-unknown-elf
 aarch64-unknown-linux				aarch64-unknown-linux-gnu
@@ -760,6 +761,7 @@ x86_64-cygwin					x86_64-pc-cygwin
 x86_64-dicos					x86_64-pc-dicos
 x86_64-ericsson-dicos				x86_64-ericsson-dicos
 x86_64-fuchsia					x86_64-pc-fuchsia
+x86_64-genode					x86_64-pc-genode
 x86_64-glidix					x86_64-pc-glidix
 x86_64-os108					x86_64-pc-os108
 x86_64-pc-ptx					x86_64-pc-ptx
