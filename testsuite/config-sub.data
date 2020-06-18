@@ -549,6 +549,7 @@ ppc						powerpc-unknown-none
 pru-elf						pru-unknown-elf
 pru						pru-unknown-elf
 ps2						i386-ibm-aix
+psp						mipsallegrexel-sony-psp
 pw32						i586-unknown-pw32
 pyramid						pyramid-unknown-none
 rdos32						i386-pc-rdos

@@ -1,3 +1,8 @@
+2020-06-18  Carsten Teibes <dev@f4ke.de>
+
+	* config.sub (psp): Recognize.
+	* testsuite/config-sub.data: Add test case.
+
 2020-06-15  Jessica Clarke <jrtc27@jrtc27.com>
 
 	* config.guess (x86_64:Linux:*:*): Detect x32 ABI. This is
