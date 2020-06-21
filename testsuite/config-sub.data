@@ -581,6 +581,10 @@ rs6000						rs6000-ibm-aix
 rx-linux					rx-unknown-linux-gnu
 rx						rx-unknown-none
 s12z						s12z-unknown-none
+s390						s390-unknown-none
+s390x						s390x-unknown-none
+s390-linux					s390-unknown-linux-gnu
+s390x-linux					s390x-unknown-linux-gnu
 s390-ibm-zvmoe					s390-ibm-zvmoe
 s390x-ibm-zvmoe					s390x-ibm-zvmoe
 sa29200						a29k-amd-udi

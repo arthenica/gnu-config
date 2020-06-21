@@ -1,3 +1,9 @@
+2020-06-21  Alexander Egorenkov  <egorenar@linux.ibm.com>
+	    Ben Elliston  <bje@gnu.org>
+
+	* config.sub (s390, s390x): Don't set manufacturer.
+	* testsuite/config-sub.data: Add test cases.
+
 2020-06-18  Carsten Teibes <dev@f4ke.de>
 
 	* config.sub (psp): Recognize.
