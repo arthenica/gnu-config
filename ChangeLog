@@ -1,3 +1,8 @@
+2020-06-26  John Ericson  <john.ericson@obsidian.systems>
+
+	* config.sub: Move OS whitelist to the bottom of the case as
+	preparation for future work.
+
 2020-06-21  Alexander Egorenkov  <egorenar@linux.ibm.com>
 	    Ben Elliston  <bje@gnu.org>
 
