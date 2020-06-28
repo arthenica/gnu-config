@@ -1763,6 +1763,9 @@ case $vendor in
 			*-os400*)
 				vendor=ibm
 				;;
+			s390-* | s390x-*)
+				vendor=ibm
+				;;
 			*-ptx*)
 				vendor=sequent
 				;;
