@@ -1,3 +1,7 @@
+2020-06-27  John Ericson  <john.ericson@obsidian.systems>
+
+	* config.sub: Allow CPU to influence vendor defaulting too.
+
 2020-06-26  John Ericson  <john.ericson@obsidian.systems>
 
 	* config.sub: Move OS whitelist to the bottom of the case as
