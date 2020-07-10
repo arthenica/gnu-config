@@ -103,6 +103,8 @@ armv8a						armv8a-unknown-none
 armv8b-linux-gnueabi				armv8b-unknown-linux-gnueabi
 armv8m						armv8m-unknown-none
 armv8r						armv8r-unknown-none
+arm64-apple-darwin20.0.0			aarch64-apple-darwin20.0.0
+arm64-apple-ios					aarch64-apple-ios
 aros						i386-pc-aros
 asmjs						asmjs-unknown-none
 asmjs-emscripten				asmjs-unknown-emscripten

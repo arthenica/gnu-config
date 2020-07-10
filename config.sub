@@ -1104,6 +1104,9 @@ case $cpu-$vendor in
 	xscale-* | xscalee[bl]-*)
 		cpu=`echo "$cpu" | sed 's/^xscale/arm/'`
 		;;
+	arm64-*)
+		cpu=aarch64
+		;;
 
 	# Recognize the canonical CPU Types that limit and/or modify the
 	# company names they are paired with.

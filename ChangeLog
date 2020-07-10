@@ -1,3 +1,7 @@
+2020-07-10  Keno Fischer  <keno@juliacomputing.com>
+
+	* config.sub (arm64-*): Canonicalise to aarch64-*.
+
 2020-06-28  John Ericson  <john.ericson@obsidian.systems>
 
 	* config.sub: Properly parse the KERNEL-OS case.
