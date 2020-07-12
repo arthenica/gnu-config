@@ -1,3 +1,8 @@
+2020-07-12  Ben Elliston  <bje@gnu.org>
+
+	* config.guess (arm64:Darwin:*:*): Recognise.
+	* testsuite/config-guess.data: Add a test case.
+
 2020-07-10  Ben Elliston  <bje@gnu.org>
 
 	* config.sub (case $cpu): Whitespace fix.
