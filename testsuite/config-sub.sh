@@ -36,7 +36,7 @@ run_config_sub()
 	while read -r alias canonical ; do
 		run_one_config_sub "$alias" "$canonical" &
 		numtests+=1 jobs+=1
-	    	if [ $jobs -eq $maxprocs ] ; then
+	    	if test $jobs -eq $maxprocs ; then
 		     	for pid in $(jobs -p) ; do
 		    	    	wait "$pid"
 				rc=$((rc || $?))
@@ -73,7 +73,7 @@ run_config_sub_idempotent()
 	sed -r 's/\t+/\t/g' < config-sub.data | cut -f 2 | uniq | while read -r canonical ; do
 		run_one_config_sub_idempotent "$canonical" &
 		numtests+=1 jobs+=1
-	    	if [ $jobs -eq $maxprocs ] ; then
+	    	if test $jobs -eq $maxprocs ; then
 		     	for pid in $(jobs -p) ; do
 		    	    	wait "$pid"
 				rc=$((rc || $?))

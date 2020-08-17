@@ -22,12 +22,12 @@ run_config_guess()
 			-e "s,@VERSION@,$version," \
 			-e "s,@PROCESSOR@,$processor," > ./uname << EOF
 #!/bin/sh
-[ \$# -ne 1 ] && exec sh \$0 -s
-[ \$1 = -m ] && echo "@MACHINE@" && exit 0
-[ \$1 = -r ] && echo "@RELEASE@" && exit 0
-[ \$1 = -s ] && echo "@SYSTEM@" && exit 0
-[ \$1 = -v ] && echo "@VERSION@" && exit 0
-[ \$1 = -p ] && echo "@PROCESSOR@" && exit 0
+test \$# -ne 1 && exec sh \$0 -s
+test \$1 = -m && echo "@MACHINE@" && exit 0
+test \$1 = -r && echo "@RELEASE@" && exit 0
+test \$1 = -s && echo "@SYSTEM@" && exit 0
+test \$1 = -v && echo "@VERSION@" && exit 0
+test \$1 = -p && echo "@PROCESSOR@" && exit 0
 EOF
 		chmod +x uname
 		output=$(CC_FOR_BUILD=no_compiler_found sh -eu ../config.guess 2>/dev/null)

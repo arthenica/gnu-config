@@ -1,3 +1,10 @@
+2020-08-17  Issam E. Maghni  <issam.e.maghni@mailbox.org>
+
+	* config.guess: Replace "if [ EXPR ]" with "if test EXPR".
+	* config.sub: Likewise.
+	* testsuite/config-guess.sh: Likewise.
+	* testsuite/config-sub.sh: Likewise.
+
 2020-07-12  Ben Elliston  <bje@gnu.org>
 
 	* config.guess (arm64:Darwin:*:*): Recognise.
