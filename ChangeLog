@@ -1,3 +1,9 @@
+2020-09-08  Elad Lahav  <e2lahav@gmail.com>
+	    Ben Elliston  <bje@gnu.org>
+
+	* config.sub: Fix regression in QNX recognition.
+	* testsuite/config-sub.data: Add some test cases.
+
 2020-08-17  Issam E. Maghni  <issam.e.maghni@mailbox.org>
 
 	* config.guess: Replace "if [ EXPR ]" with "if test EXPR".

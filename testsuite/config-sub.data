@@ -772,7 +772,9 @@ x86_64-ericsson-dicos				x86_64-ericsson-dicos
 x86_64-fuchsia					x86_64-pc-fuchsia
 x86_64-genode					x86_64-pc-genode
 x86_64-glidix					x86_64-pc-glidix
+x86_64-nto					x86_64-pc-nto-qnx
 x86_64-os108					x86_64-pc-os108
+x86_64-qnx					x86_64-pc-qnx
 x86_64-pc-ptx					x86_64-pc-ptx
 x86_64-ptx					x86_64-pc-ptx
 x86_64-redox					x86_64-pc-redox
