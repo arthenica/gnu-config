@@ -1,3 +1,8 @@
+2020-09-27  Fabrice Fontaine  <fontaine.fabrice@gmail.com>
+
+	* config.sub (uclinux-uclibc*): Fix detection.
+	* testsuite/config-sub.data: Add a test case to avoid regression.
+
 2020-09-19  Bruno Haible  <bruno@clisp.org>
 
 	* config.guess: Don't use 'ldd --version' to determine the presence of

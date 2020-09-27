@@ -728,6 +728,7 @@ tpf						s390x-ibm-tpf
 tron						tron-unknown-none
 ubicom32-elf					ubicom32-unknown-elf
 ubicom32					ubicom32-unknown-none
+arm-uclinux-uclibcgnueabi			arm-unknown-uclinux-uclibcgnueabi
 udi29k						a29k-amd-udi
 ultra3						a29k-nyu-sym1
 umax						ns32k-encore-bsd
