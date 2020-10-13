@@ -1,3 +1,8 @@
+2020-10-13  Ben Elliston  <bje@gnu.org>
+
+	* config.sub (i*86-pc-os2-emx): Recognise correctly.
+	* testsuite/config-sub.data: Add OS/2 tests to avoid regressions.
+
 2020-09-27  Fabrice Fontaine  <fontaine.fabrice@gmail.com>
 
 	* config.sub (uclinux-uclibc*): Fix detection.
