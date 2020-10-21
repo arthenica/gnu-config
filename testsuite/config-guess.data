@@ -27,6 +27,8 @@ cris | 2.6.6 | Linux | ignored | ignored | cris-axis-linux-gnu
 crisv32 | 2.6.6 | Linux | ignored | ignored | crisv32-axis-linux-gnu
 e2k | 2.6.32 | Linux | ignored | ignored | e2k-unknown-linux-gnu
 EM64T | 5.2 | Interix | ignored | ignored | x86_64-unknown-interix5.2
+evbarm | 9.0 | NetBSD | ignored | aarch64 | aarch64-unknown-netbsd9.0
+evbarm | 9.0 | NetBSD | ignored | aarch64eb | aarch64_be-unknown-netbsd9.0
 evbarm | 7.0 | NetBSD | ignored | arm | arm-unknown-netbsdelf7.0
 evbarm | 7.0 | NetBSD | ignored | armeb | armeb-unknown-netbsdelf7.0
 evbarm | 7.0 | NetBSD | ignored | earmv6 | armv6-unknown-netbsdelf7.0-eabi

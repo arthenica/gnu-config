@@ -1,3 +1,8 @@
+2020-10-22  Rin Okuyama  <rin@netbsd.org>
+
+	* config.guess (*:NetBSD:*:*): Handle aarch64eb.
+	* testsuite/config-guess.data: Add test cases.
+
 2020-10-13  Ben Elliston  <bje@gnu.org>
 
 	* config.sub (i*86-pc-os2-emx): Recognise correctly.
