@@ -17,7 +17,7 @@ check-sub:
 	cd testsuite && bash config-sub.sh
 
 shellcheck:
-	shellcheck -e SC2006 -f gcc config.guess config.sub testsuite/*.sh
+	shellcheck -f gcc config.guess config.sub testsuite/*.sh
 
 sort:
 	for f in config-guess.data config-sub.data ; do sort testsuite/$$f -o testsuite/$$f; done
