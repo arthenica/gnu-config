@@ -1,5 +1,11 @@
 2020-11-19  Dmitry V. Levin  <ldv@altlinux.org>
 
+	* config.guess: Prefer cgit URLs over gitweb.
+	(timestamp): Update.
+	* config.sub: Likewise.
+	* doc/config.guess.1: Regenerate.
+	* doc/config.sub.1: Likewise.
+
 	* doc/config.sub.x: New file.
 	* Makefile (HELP2MAN): New variable.
 	(doc/%.1): New rule.
