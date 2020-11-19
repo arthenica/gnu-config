@@ -1,5 +1,10 @@
 2020-11-19  Dmitry V. Levin  <ldv@altlinux.org>
 
+	* doc/config.sub.x: New file.
+	* Makefile (HELP2MAN): New variable.
+	(doc/%.1): New rule.
+	(doc/config.guess.1, doc/config.sub.1): Remove.
+
 	* testsuite/config-sub.sh: Fix indentation that uses spaces before
 	tabs.
 

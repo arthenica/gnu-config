@@ -1,14 +1,10 @@
+HELP2MAN = help2man -N
+
 all:
 
 check: check-guess check-sub
 
 manpages: doc/config.guess.1 doc/config.sub.1
-
-doc/config.guess.1: config.guess
-	help2man -N --include=doc/config.guess.x --output=$@ ./config.guess
-
-doc/config.sub.1: config.sub
-	help2man -N --name "validate and canonicalize a configuration triplet" --output=$@ ./config.sub
 
 check-guess:
 	cd testsuite && bash config-guess.sh && rm uname
@@ -21,3 +17,6 @@ shellcheck:
 
 sort:
 	for f in config-guess.data config-sub.data ; do sort testsuite/$$f -o testsuite/$$f; done
+
+doc/%.1: % doc/%.x
+	$(HELP2MAN) --include=doc/$<.x --output=$@ ./$<
