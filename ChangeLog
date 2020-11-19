@@ -1,3 +1,7 @@
+2020-11-19  Dmitry V. Levin  <ldv@altlinux.org>
+
+	* .gitattributes: New file.
+
 2020-11-17  Dmitry V. Levin  <ldv@altlinux.org>
 
 	* config.guess: Combine two heuristics to detect musl libc.
