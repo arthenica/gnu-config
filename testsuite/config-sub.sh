@@ -30,22 +30,22 @@ run_one_config_sub()
 
 run_config_sub()
 {
-    	local -i rc=0 jobs=0
+	local -i rc=0 jobs=0
 	numtests=0
 	name="checks"
 	while read -r alias canonical ; do
 		run_one_config_sub "$alias" "$canonical" &
 		numtests+=1 jobs+=1
-	    	if test $jobs -eq $maxprocs ; then
-		     	for pid in $(jobs -p) ; do
-		    	    	wait "$pid"
+		if test $jobs -eq $maxprocs ; then
+			for pid in $(jobs -p) ; do
+				wait "$pid"
 				rc=$((rc || $?))
 			done
 			jobs=0
 		fi
 	done < config-sub.data
 	for pid in $(jobs -p) ; do
-	    	wait "$pid"
+		wait "$pid"
 		rc=$((rc || $?))
 	done
 	return $rc
@@ -73,16 +73,16 @@ run_config_sub_idempotent()
 	sed -r 's/\t+/\t/g' < config-sub.data | cut -f 2 | uniq | while read -r canonical ; do
 		run_one_config_sub_idempotent "$canonical" &
 		numtests+=1 jobs+=1
-	    	if test $jobs -eq $maxprocs ; then
-		     	for pid in $(jobs -p) ; do
-		    	    	wait "$pid"
+		if test $jobs -eq $maxprocs ; then
+			for pid in $(jobs -p) ; do
+				wait "$pid"
 				rc=$((rc || $?))
 			done
 			jobs=0
 		fi
 	done
 	for pid in $(jobs -p) ; do
-	    	wait "$pid"
+		wait "$pid"
 		rc=$((rc || $?))
 	done
 	return $rc

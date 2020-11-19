@@ -1,5 +1,8 @@
 2020-11-19  Dmitry V. Levin  <ldv@altlinux.org>
 
+	* testsuite/config-sub.sh: Fix indentation that uses spaces before
+	tabs.
+
 	* .gitattributes: New file.
 
 2020-11-17  Dmitry V. Levin  <ldv@altlinux.org>
