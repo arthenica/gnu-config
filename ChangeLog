@@ -1,3 +1,8 @@
+2020-12-02  Dmitry V. Levin  <ldv@altlinux.org>
+
+	* config.sub (thumbv7*): Recognize.
+	* testsuite/config-sub.data (thumbv7): New test.
+
 2020-11-19  Dmitry V. Levin  <ldv@altlinux.org>
 
 	* config.guess: Prefer cgit URLs over gitweb.

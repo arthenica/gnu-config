@@ -697,6 +697,7 @@ t90						t90-cray-unicos
 tahoe						tahoe-unknown-none
 thumb						arm-unknown-none
 thumb-none-elf					arm-none-elf
+thumbv7						thumbv7-unknown-none
 tic4x						tic4x-unknown-coff
 tic54x-coff					tic54x-unknown-coff
 tic54x-none-coff				tic54x-none-coff
