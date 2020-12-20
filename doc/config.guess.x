@@ -6,7 +6,7 @@ config.guess might need to compile and run C code, hence it needs a
 compiler for the `build' machine: use the environment variable
 `CC_FOR_BUILD' to specify the compiler for the build machine.  If
 `CC_FOR_BUILD' is not specified, `CC' will be used.  Be sure to
-specify `CC_FOR_BUILD' is `CC' is a cross-compiler to the `host'
+specify `CC_FOR_BUILD' if `CC' is a cross-compiler to the `host'
 machine.
 
   CC_FOR_BUILD    a native C compiler, defaults to `cc'
