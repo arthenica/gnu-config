@@ -1,6 +1,7 @@
 2020-12-20  Dmitry V. Levin  <ldv@altlinux.org>
 
 	* doc/config.guess.x: Fix typo.
+	* doc/config.guess.1: Regenerate.
 
 2020-12-02  Dmitry V. Levin  <ldv@altlinux.org>
 
