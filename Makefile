@@ -15,8 +15,9 @@ check-sub:
 shellcheck:
 	shellcheck -f gcc config.guess config.sub testsuite/*.sh
 
-sort:
-	for f in config-guess.data config-sub.data ; do sort testsuite/$$f -o testsuite/$$f; done
+.PHONY: sort
+sort: testsuite/config-guess.data testsuite/config-sub.data
+	for f in $^; do LC_ALL=C sort -u $$f -o $$f; done
 
 doc/%.1: % doc/%.x
 	$(HELP2MAN) --include=doc/$<.x --output=$@ ./$<
