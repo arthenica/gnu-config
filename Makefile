@@ -20,3 +20,13 @@ sort:
 
 doc/%.1: % doc/%.x
 	$(HELP2MAN) --include=doc/$<.x --output=$@ ./$<
+
+gen_changelog_start_date = 2020-12-21 12:21
+.PHONY: ChangeLog
+ChangeLog:
+	@rm -f $@.new
+	{ ./gitlog-to-changelog --append-dot \
+		--since='$(gen_changelog_start_date)' && \
+	  echo && echo && echo 'See ChangeLog-old for older changes.'; \
+	} > $@.new
+	mv -f $@.new $@
