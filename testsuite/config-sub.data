@@ -588,6 +588,17 @@ riscv64-company-elf				riscv64-company-elf
 riscv64-elf					riscv64-unknown-elf
 riscv64-hcos					riscv64-unknown-hcos
 riscv64-linux					riscv64-unknown-linux-gnu
+riscv32be					riscv32be-unknown-none
+riscv32be-company-elf				riscv32be-company-elf
+riscv32be-company-hcos				riscv32be-company-hcos
+riscv32be-elf					riscv32be-unknown-elf
+riscv32be-linux					riscv32be-unknown-linux-gnu
+riscv64be					riscv64be-unknown-none
+riscv64be-company-elf				riscv64be-company-elf
+riscv64be-elf					riscv64be-unknown-elf
+riscv64be-hcos					riscv64be-unknown-hcos
+riscv64be-linux					riscv64be-unknown-linux-gnu
+riscv64be-company-linux				riscv64be-company-linux-gnu
 rl78						rl78-unknown-none
 rl78-linux					rl78-unknown-linux-gnu
 roadrunner					i386-sun-sunos4.0.2
