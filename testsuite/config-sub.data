@@ -541,6 +541,8 @@ pn						pn-gould-sysv
 powerpc						powerpc-unknown-none
 powerpc-bluegene				powerpc-ibm-cnk
 powerpc-cnk					powerpc-ibm-cnk
+powerpc-eabivle					powerpc-unknown-eabivle
+powerpc-eabisim					powerpc-unknown-eabisim
 powerpc-elf-lynxos				powerpc-elf-lynxos
 powerpc-elf-lynxos5				powerpc-elf-lynxos5
 powerpc-haiku					powerpc-unknown-haiku
