@@ -18,6 +18,7 @@ aarch64-genode					aarch64-unknown-genode
 aarch64-linux					aarch64-unknown-linux-gnu
 aarch64-unknown-elf				aarch64-unknown-elf
 aarch64-unknown-linux				aarch64-unknown-linux-gnu
+aarch64-wrs-vxworks				aarch64-wrs-vxworks
 aarch64_be					aarch64_be-unknown-none
 aarch64_be-bme					aarch64_be-unknown-bme
 aarch64_be-elf					aarch64_be-unknown-elf
@@ -97,6 +98,7 @@ armv7-apple-ios					armv7-apple-ios
 armv7-unknown-netbsdelf7.0			armv7-unknown-netbsdelf7.0
 armv7-unknown-netbsdelf7.0-eabi			armv7-unknown-netbsdelf7.0-eabi
 armv7-unknown-netbsdelf7.0-eabihf		armv7-unknown-netbsdelf7.0-eabihf
+armv7-wrs-vxworks-eabihf			armv7-wrs-vxworks-eabihf
 armv7a						armv7a-unknown-none
 armv7a-linux-gnueabi				armv7a-unknown-linux-gnueabi
 armv7eb-unknown-netbsdelf7.0			armv7eb-unknown-netbsdelf7.0
@@ -104,6 +106,7 @@ armv7eb-unknown-netbsdelf7.0-eabi		armv7eb-unknown-netbsdelf7.0-eabi
 armv7eb-unknown-netbsdelf7.0-eabihf		armv7eb-unknown-netbsdelf7.0-eabihf
 armv7m						armv7m-unknown-none
 armv7m-unknown-none-eabi				armv7m-unknown-none-eabi
+armv7m-wrs-vxworks-eabihf				armv7m-wrs-vxworks-eabihf
 armv7r						armv7r-unknown-none
 armv8a						armv8a-unknown-none
 armv8b-linux-gnueabi				armv8b-unknown-linux-gnueabi
@@ -290,6 +293,9 @@ i686-ericsson-dicos				i686-ericsson-dicos
 i686-haiku					i686-pc-haiku
 i686-kopensolaris5.11-gnu			i686-pc-kopensolaris5.11-gnu
 i686-os2-emx					i686-pc-os2-emx
+i686-wrs-vxworks				i686-wrs-vxworks
+i686-wrs-vxworks-simlinux			i686-wrs-vxworks-simlinux
+i686-wrs-vxworks-simwindows			i686-wrs-vxworks-simwindows
 i786-elf					i786-pc-elf
 i860						i860-unknown-sysv
 i960						i960-unknown-none
@@ -548,8 +554,11 @@ powerpc-elf-lynxos5				powerpc-elf-lynxos5
 powerpc-haiku					powerpc-unknown-haiku
 powerpc-pikeos					powerpc-unknown-elf
 powerpc-sysgo-pikeos				powerpc-sysgo-elf
+powerpc-wrs-vxworks				powerpc-wrs-vxworks
+powerpc-wrs-vxworks-spe			powerpc-wrs-vxworks-spe
 powerpc-xcoff-lynxos178				powerpc-xcoff-lynxos178
 powerpc64					powerpc64-unknown-none
+powerpc64-wrs-vxworks				powerpc64-wrs-vxworks
 powerpc64le					powerpc64le-unknown-none
 powerpcle					powerpcle-unknown-none
 powerpcspe					powerpcspe-unknown-none
@@ -590,11 +599,13 @@ riscv64-company-elf				riscv64-company-elf
 riscv64-elf					riscv64-unknown-elf
 riscv64-hcos					riscv64-unknown-hcos
 riscv64-linux					riscv64-unknown-linux-gnu
+riscv32-wrs-vxworks				riscv32-wrs-vxworks
 riscv32be					riscv32be-unknown-none
 riscv32be-company-elf				riscv32be-company-elf
 riscv32be-company-hcos				riscv32be-company-hcos
 riscv32be-elf					riscv32be-unknown-elf
 riscv32be-linux					riscv32be-unknown-linux-gnu
+riscv64-wrs-vxworks				riscv64-wrs-vxworks
 riscv64be					riscv64be-unknown-none
 riscv64be-company-elf				riscv64be-company-elf
 riscv64be-elf					riscv64be-unknown-elf
@@ -809,6 +820,9 @@ x86_64-sortix					x86_64-pc-sortix
 x86_64-twizzler				x86_64-pc-twizzler
 x86_64-unknown-ptx				x86_64-sequent-ptx
 x86_64-windows					x86_64-pc-windows
+x86_64-wrs-vxworks				x86_64-wrs-vxworks
+x86_64-wrs-vxworks-simlinux			x86_64-wrs-vxworks-simlinux
+x86_64-wrs-vxworks-simwindows			x86_64-wrs-vxworks-simwindows
 xbox						i686-pc-mingw32
 xc16x						xc16x-unknown-none
 xc16x-elf					xc16x-unknown-elf
