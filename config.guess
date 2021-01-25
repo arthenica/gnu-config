@@ -2,7 +2,7 @@
 # Attempt to guess a canonical system name.
 #   Copyright 1992-2021 Free Software Foundation, Inc.
 
-timestamp='2021-01-19'
+timestamp='2021-01-25'
 
 # This file is free software; you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by
@@ -1482,8 +1482,8 @@ EOF
     i*86:rdos:*:*)
 	echo "$UNAME_MACHINE"-pc-rdos
 	exit ;;
-    i*86:AROS:*:*)
-	echo "$UNAME_MACHINE"-pc-aros
+    *:AROS:*:*)
+	echo "$UNAME_MACHINE"-unknown-aros
 	exit ;;
     x86_64:VMkernel:*:*)
 	echo "$UNAME_MACHINE"-unknown-esx
