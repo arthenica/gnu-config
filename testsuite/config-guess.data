@@ -105,8 +105,8 @@ ppc64 | 2.6.9-22 | Linux | ignored | ignored | powerpc64-unknown-linux-gnu
 ppc64le | 3.1.0 | Linux | ignored | ignored | powerpc64le-unknown-linux-gnu
 riscv | 1.0 | Twizzler | ignored | ignored | riscv-unknown-twizzler
 riscv32 | ignored | Linux | ignored | ignored | riscv32-unknown-linux-gnu
-riscv64 | ignored | Linux | ignored | ignored | riscv64-unknown-linux-gnu
 riscv32be | ignored | Linux | ignored | ignored | riscv32be-unknown-linux-gnu
+riscv64 | ignored | Linux | ignored | ignored | riscv64-unknown-linux-gnu
 riscv64be | ignored | Linux | ignored | ignored | riscv64be-unknown-linux-gnu
 s390x | 5.6 | SunOS | ignored | ignored | s390x-ibm-solaris2.6
 sun3 | 4.0 | SunOS | ignored | ignored | m68k-sun-sunos4.0
