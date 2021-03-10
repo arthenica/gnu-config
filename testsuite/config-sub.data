@@ -251,6 +251,7 @@ i386-elf					i386-pc-elf
 i386-es						i386-pc-es
 i386-freebsd					i386-pc-freebsd
 i386-glidix					i386-pc-glidix
+i386-serenity					i386-pc-serenity
 i386-haiku					i386-pc-haiku
 i386-isc					i386-pc-isc2.2
 i386-libertybsd					i386-pc-libertybsd
