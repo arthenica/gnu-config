@@ -26,6 +26,7 @@ SX-8R | 1.0 | SUPER-UX | ignored | ignored | sx8r-nec-superux1.0
 SX-ACE | 1.0 | SUPER-UX | ignored | ignored | sxace-nec-superux1.0
 aarch64 | ignored | Linux | ignored | ignored | aarch64-unknown-linux-gnu
 aarch64_be | ignored | Linux | ignored | ignored | aarch64_be-unknown-linux-gnu
+amd64 | 1.0 | SecBSD | ignored | x86_64 | x86_64-unknown-secbsd1.0
 amd64 | 1.5.12(0.116/4/2) | CYGWIN_NT-5.2 | ignored | ignored | x86_64-pc-cygwin
 amd64 | 6.1.4 | NetBSD | ignored | x86_64 | x86_64-unknown-netbsd6.1
 amd64 | 6.1.5_PATCH | NetBSD | ignored | x86_64 | x86_64-unknown-netbsd6.1
