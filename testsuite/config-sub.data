@@ -817,6 +817,7 @@ x86_64-pc-ptx					x86_64-pc-ptx
 x86_64-ptx					x86_64-pc-ptx
 x86_64-qnx					x86_64-pc-qnx
 x86_64-redox					x86_64-pc-redox
+x86_64-secbsd					x86_64-pc-secbsd
 x86_64-sortix					x86_64-pc-sortix
 x86_64-twizzler				x86_64-pc-twizzler
 x86_64-unknown-ptx				x86_64-sequent-ptx
