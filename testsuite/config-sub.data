@@ -59,9 +59,14 @@ amix						m68k-unknown-sysv4
 apollo68					m68k-apollo-sysv
 apollo68bsd					m68k-apollo-bsd
 arc						arc-unknown-none
+arc-elf						arc-unknown-elf
 arc-linux					arc-unknown-linux-gnu
 arceb						arceb-unknown-none
+arceb-elf					arceb-unknown-elf
 arceb-linux					arceb-unknown-linux-gnu
+arc64						arc64-unknown-none
+arc64-elf					arc64-unknown-elf
+arc64-linux					arc64-unknown-linux-gnu
 arm						arm-unknown-none
 arm-cegcc					arm-unknown-cegcc
 arm-coff					arm-unknown-coff
