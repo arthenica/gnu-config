@@ -419,6 +419,10 @@ mipsisa32					mipsisa32-unknown-elf
 mipsisa32el					mipsisa32el-unknown-elf
 mipsisa32r2					mipsisa32r2-unknown-elf
 mipsisa32r2el					mipsisa32r2el-unknown-elf
+mipsisa32r3					mipsisa32r3-unknown-elf
+mipsisa32r3el					mipsisa32r3el-unknown-elf
+mipsisa32r5					mipsisa32r5-unknown-elf
+mipsisa32r5el					mipsisa32r5el-unknown-elf
 mipsisa32r6					mipsisa32r6-unknown-elf
 mipsisa32r6-elf					mipsisa32r6-unknown-elf
 mipsisa32r6el					mipsisa32r6el-unknown-elf
@@ -427,6 +431,10 @@ mipsisa64					mipsisa64-unknown-elf
 mipsisa64el					mipsisa64el-unknown-elf
 mipsisa64r2					mipsisa64r2-unknown-elf
 mipsisa64r2el					mipsisa64r2el-unknown-elf
+mipsisa64r3					mipsisa64r3-unknown-elf
+mipsisa64r3el					mipsisa64r3el-unknown-elf
+mipsisa64r5					mipsisa64r5-unknown-elf
+mipsisa64r5el					mipsisa64r5el-unknown-elf
 mipsisa64r6					mipsisa64r6-unknown-elf
 mipsisa64r6-elf					mipsisa64r6-unknown-elf
 mipsisa64r6el					mipsisa64r6el-unknown-elf
