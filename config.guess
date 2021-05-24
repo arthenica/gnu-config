@@ -2,7 +2,7 @@
 # Attempt to guess a canonical system name.
 #   Copyright 1992-2021 Free Software Foundation, Inc.
 
-timestamp='2021-04-21'
+timestamp='2021-05-24'
 
 # This file is free software; you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by
@@ -300,6 +300,8 @@ case "$UNAME_MACHINE:$UNAME_SYSTEM:$UNAME_RELEASE:$UNAME_VERSION" in
 	echo mips-dec-osf1
 	exit ;;
     alpha:OSF1:*:*)
+	# Reset EXIT trap before exiting to avoid spurious non-zero exit code.
+	trap '' 0
 	case $UNAME_RELEASE in
 	*4.0)
 		UNAME_RELEASE=$(/usr/sbin/sizer -v | awk '{print $3}')
@@ -351,10 +353,7 @@ case "$UNAME_MACHINE:$UNAME_SYSTEM:$UNAME_RELEASE:$UNAME_VERSION" in
 	# A Xn.n version is an unreleased experimental baselevel.
 	# 1.2 uses "1.2" for uname -r.
 	echo "$UNAME_MACHINE"-dec-osf"$(echo "$UNAME_RELEASE" | sed -e 's/^[PVTX]//' | tr ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz)"
-	# Reset EXIT trap before exiting to avoid spurious non-zero exit code.
-	exitcode=$?
-	trap '' 0
-	exit $exitcode ;;
+	exit ;;
     Amiga*:UNIX_System_V:4.0:*)
 	echo m68k-unknown-sysv4
 	exit ;;
