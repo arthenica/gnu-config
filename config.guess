@@ -400,8 +400,9 @@ case $UNAME_MACHINE:$UNAME_SYSTEM:$UNAME_RELEASE:$UNAME_VERSION in
 	;;
     DRS?6000:UNIX_SV:4.2*:7* | DRS?6000:isis:4.2*:7*)
 	case $(/usr/bin/uname -p) in
-	    sparc) echo sparc-icl-nx7; exit ;;
-	esac ;;
+	    sparc) GUESS=sparc-icl-nx7 ;;
+	esac
+	;;
     s390x:SunOS:*:*)
 	GUESS="$UNAME_MACHINE"-ibm-solaris2"$(echo "$UNAME_RELEASE" | sed -e 's/[^.]*//')"
 	;;
@@ -453,13 +454,13 @@ case $UNAME_MACHINE:$UNAME_SYSTEM:$UNAME_RELEASE:$UNAME_VERSION in
 	test "x$UNAME_RELEASE" = x && UNAME_RELEASE=3
 	case $(/bin/arch) in
 	    sun3)
-		echo m68k-sun-sunos"$UNAME_RELEASE"
+		GUESS=m68k-sun-sunos"$UNAME_RELEASE"
 		;;
 	    sun4)
-		echo sparc-sun-sunos"$UNAME_RELEASE"
+		GUESS=sparc-sun-sunos"$UNAME_RELEASE"
 		;;
 	esac
-	exit ;;
+	;;
     aushp:SunOS:*:*)
 	GUESS=sparc-auspex-sunos"$UNAME_RELEASE"
 	;;
@@ -590,7 +591,7 @@ EOF
 	GUESS=mips-sgi-irix"$(echo "$UNAME_RELEASE"|sed -e 's/-/_/g')"
 	;;
     ????????:AIX?:[12].1:2)   # AIX 2.2.1 or AIX 2.1.1 is RT/PC AIX.
-	GUESS=romp-ibm-aix  # uname -m gives an 8 hex-code CPU id
+	GUESS=romp-ibm-aix    # uname -m gives an 8 hex-code CPU id
 	;;                    # Note that: echo "'$(uname -s)'" gives 'AIX '
     i*86:AIX:*:*)
 	GUESS=i386-ibm-aix
@@ -1075,11 +1076,11 @@ EOF
     parisc:Linux:*:* | hppa:Linux:*:*)
 	# Look for CPU level
 	case $(grep '^cpu[^a-z]*:' /proc/cpuinfo 2>/dev/null | cut -d' ' -f2) in
-	  PA7*) echo hppa1.1-unknown-linux-"$LIBC" ;;
-	  PA8*) echo hppa2.0-unknown-linux-"$LIBC" ;;
-	  *)    echo hppa-unknown-linux-"$LIBC" ;;
+	  PA7*) GUESS=hppa1.1-unknown-linux-$LIBC ;;
+	  PA8*) GUESS=hppa2.0-unknown-linux-$LIBC ;;
+	  *)    GUESS=hppa-unknown-linux-$LIBC ;;
 	esac
-	exit ;;
+	;;
     ppc64:Linux:*:*)
 	GUESS=powerpc64-unknown-linux-"$LIBC"
 	;;
@@ -1217,7 +1218,7 @@ EOF
 	if grep Stardent /usr/include/sys/uadmin.h >/dev/null 2>&1 ; then
 	  GUESS=i860-stardent-sysv"$UNAME_RELEASE"  # Stardent Vistra i860-SVR4
 	else # Add other i860-SVR4 vendors below as they are discovered.
-	  GUESS=i860-unknown-sysv"$UNAME_RELEASE"  # Unknown i860-SVR4
+	  GUESS=i860-unknown-sysv"$UNAME_RELEASE"   # Unknown i860-SVR4
 	fi
 	;;
     mini*:CTIX:SYS*5:*)
@@ -1474,9 +1475,9 @@ EOF
     *:*VMS:*:*)
 	UNAME_MACHINE=$( (uname -p) 2>/dev/null)
 	case $UNAME_MACHINE in
-	    A*) echo alpha-dec-vms ; exit ;;
-	    I*) echo ia64-dec-vms ; exit ;;
-	    V*) echo vax-dec-vms ; exit ;;
+	    A*) GUESS=alpha-dec-vms ;;
+	    I*) GUESS=ia64-dec-vms ;;
+	    V*) GUESS=vax-dec-vms ;;
 	esac ;;
     *:XENIX:*:SysV)
 	GUESS=i386-pc-xenix
