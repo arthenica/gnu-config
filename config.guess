@@ -84,6 +84,9 @@ if test $# != 0; then
   exit 1
 fi
 
+# Just in case it came from the environment.
+GUESS=
+
 # CC_FOR_BUILD -- compiler used by this script. Note that the use of a
 # compiler to aid in system detection is discouraged as it requires
 # temporary files to be created and, as you can see below, it is a
@@ -1497,6 +1500,12 @@ EOF
 	echo "$UNAME_MACHINE"-unknown-unleashed"$UNAME_RELEASE"
 	exit ;;
 esac
+
+# Do we have a guess based on uname results?
+if test "x$GUESS" != x; then
+    echo "$GUESS"
+    exit
+fi
 
 # No uname command or uname output not recognized.
 set_cc_for_build
