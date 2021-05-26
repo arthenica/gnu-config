@@ -2,6 +2,8 @@
 # Attempt to guess a canonical system name.
 #   Copyright 1992-2021 Free Software Foundation, Inc.
 
+# shellcheck disable=SC2006,SC2268 # see below for rationale
+
 timestamp='2021-05-24'
 
 # This file is free software; you can redistribute it and/or modify it
@@ -30,6 +32,14 @@ timestamp='2021-05-24'
 # https://git.savannah.gnu.org/cgit/config.git/plain/config.guess
 #
 # Please send patches to <config-patches@gnu.org>.
+
+
+# The "shellcheck disable" line above the timestamp inhibits complaints
+# about features and limitations of the classic Bourne shell that were
+# superseded or lifted in POSIX.  However, this script identifies a wide
+# variety of pre-POSIX systems that do not have POSIX shells at all, and
+# even some reasonably current systems (Solaris 10 as case-in-point) still
+# have a pre-POSIX /bin/sh.
 
 
 me=$(echo "$0" | sed -e 's,.*/,,')
@@ -105,7 +115,7 @@ set_cc_for_build() {
     # prevent multiple calls if $tmp is already set
     test "$tmp" && return 0
     : "${TMPDIR=/tmp}"
-    # shellcheck disable=SC2039
+    # shellcheck disable=SC2039,SC3028
     { tmp=$( (umask 077 && mktemp -d "$TMPDIR/cgXXXXXX") 2>/dev/null) && test -n "$tmp" && test -d "$tmp" ; } ||
 	{ test -n "$RANDOM" && tmp=$TMPDIR/cg$$-$RANDOM && (umask 077 && mkdir "$tmp" 2>/dev/null) ; } ||
 	{ tmp=$TMPDIR/cg-$$ && (umask 077 && mkdir "$tmp" 2>/dev/null) && echo "Warning: creating insecure temp directory" >&2 ; } ||
@@ -160,7 +170,8 @@ Linux|GNU|GNU/*)
 	#endif
 	#endif
 	EOF
-	eval "$($CC_FOR_BUILD -E "$dummy.c" 2>/dev/null | grep '^LIBC' | sed 's, ,,g')"
+	cc_set_libc=$($CC_FOR_BUILD -E "$dummy.c" 2>/dev/null | grep '^LIBC' | sed 's, ,,g')
+	eval "$cc_set_libc"
 
 	# Second heuristic to detect musl libc.
 	if [ "$LIBC" = unknown ] &&
@@ -943,11 +954,15 @@ EOF
 	;;
     *:GNU:*:*)
 	# the GNU system
-	GUESS="$(echo "$UNAME_MACHINE" | sed -e 's,[-/].*$,,')-unknown-$LIBC$(echo "$UNAME_RELEASE" | sed -e 's,/.*$,,')"
+	GNU_ARCH=$(echo "$UNAME_MACHINE" | sed -e 's,[-/].*$,,')
+	GNU_REL=$(echo "$UNAME_RELEASE" | sed -e 's,/.*$,,')
+	GUESS=$GNU_ARCH-unknown-$LIBC$GNU_REL
 	;;
     *:GNU/*:*:*)
 	# other systems with GNU libc and userland
-	GUESS="$UNAME_MACHINE-unknown-$(echo "$UNAME_SYSTEM" | sed 's,^[^/]*/,,' | tr "[:upper:]" "[:lower:]")$(echo "$UNAME_RELEASE" | sed -e 's/[-(].*//')-$LIBC"
+	GNU_SYS=$(echo "$UNAME_SYSTEM" | sed 's,^[^/]*/,,' | tr "[:upper:]" "[:lower:]")
+	GNU_REL=$(echo "$UNAME_RELEASE" | sed -e 's/[-(].*//')
+	GUESS=$UNAME_MACHINE-unknown-$GNU_SYS$GNU_REL-$LIBC
 	;;
     *:Minix:*:*)
 	GUESS=$UNAME_MACHINE-unknown-minix
@@ -1072,7 +1087,8 @@ EOF
 	#endif
 	#endif
 EOF
-	eval "$($CC_FOR_BUILD -E "$dummy.c" 2>/dev/null | grep '^CPU\|^MIPS_ENDIAN\|^LIBCABI')"
+	cc_set_vars=$($CC_FOR_BUILD -E "$dummy.c" 2>/dev/null | grep '^CPU\|^MIPS_ENDIAN\|^LIBCABI')
+	eval "$cc_set_vars"
 	test "x$CPU" != x && { echo "$CPU${MIPS_ENDIAN}-unknown-linux-$LIBCABI"; exit; }
 	;;
     mips64el:Linux:*:*)
@@ -1688,9 +1704,11 @@ and
   https://git.savannah.gnu.org/cgit/config.git/plain/config.sub
 EOF
 
-year=$(echo $timestamp | sed 's,-.*,,')
+our_year=$(echo $timestamp | sed 's,-.*,,')
+thisyear=$(date +%Y)
 # shellcheck disable=SC2003
-if test "$(expr "$(date +%Y)" - "$year")" -lt 3 ; then
+script_age=$(expr "$thisyear" - "$our_year")
+if test "$script_age" -lt 3 ; then
    cat >&2 <<EOF
 
 If $0 has already been updated, send the following data and any
