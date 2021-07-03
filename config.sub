@@ -2,6 +2,8 @@
 # Configuration validation subroutine script.
 #   Copyright 1992-2021 Free Software Foundation, Inc.
 
+# shellcheck disable=SC2006,SC2268 # see below for rationale
+
 timestamp='2021-07-03'
 
 # This file is free software; you can redistribute it and/or modify it
@@ -49,6 +51,13 @@ timestamp='2021-07-03'
 # or in some cases, the newer four-part form:
 #	CPU_TYPE-MANUFACTURER-KERNEL-OPERATING_SYSTEM
 # It is wrong to echo any other type of specification.
+
+# The "shellcheck disable" line above the timestamp inhibits complaints
+# about features and limitations of the classic Bourne shell that were
+# superseded or lifted in POSIX.  However, this script identifies a wide
+# variety of pre-POSIX systems that do not have POSIX shells at all, and
+# even some reasonably current systems (Solaris 10 as case-in-point) still
+# have a pre-POSIX /bin/sh.
 
 me=`echo "$0" | sed -e 's,.*/,,'`
 
