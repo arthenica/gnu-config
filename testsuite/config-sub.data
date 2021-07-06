@@ -19,6 +19,7 @@ aarch64-linux					aarch64-unknown-linux-gnu
 aarch64-unknown-elf				aarch64-unknown-elf
 aarch64-unknown-linux				aarch64-unknown-linux-gnu
 aarch64-wrs-vxworks				aarch64-wrs-vxworks
+aarch64-zephyr					aarch64-unknown-zephyr
 aarch64_be					aarch64_be-unknown-none
 aarch64_be-bme					aarch64_be-unknown-bme
 aarch64_be-elf					aarch64_be-unknown-elf
@@ -61,12 +62,15 @@ apollo68bsd					m68k-apollo-bsd
 arc						arc-unknown-none
 arc-elf						arc-unknown-elf
 arc-linux					arc-unknown-linux-gnu
+arc-zephyr					arc-unknown-zephyr
 arc32						arc32-unknown-none
 arc32-elf					arc32-unknown-elf
 arc32-linux					arc32-unknown-linux-gnu
+arc32-zephyr					arc32-unknown-zephyr
 arc64						arc64-unknown-none
 arc64-elf					arc64-unknown-elf
 arc64-linux					arc64-unknown-linux-gnu
+arc64-zephyr					arc64-unknown-zephyr
 arceb						arceb-unknown-none
 arceb-elf					arceb-unknown-elf
 arceb-linux					arceb-unknown-linux-gnu
@@ -84,6 +88,7 @@ arm-uclinux-uclibcgnueabi			arm-unknown-uclinux-uclibcgnueabi
 arm-unknown-netbsdelf7.0			arm-unknown-netbsdelf7.0
 arm-unknown-none-eabi				arm-unknown-none-eabi
 arm-unknown-riscos				arm-unknown-riscos
+arm-zephyr					arm-unknown-zephyr
 arm64-apple-darwin20.0.0			aarch64-apple-darwin20.0.0
 arm64-apple-ios					aarch64-apple-ios
 armbe						armbe-unknown-none
@@ -295,6 +300,7 @@ i586-auroraux5.0				i586-pc-auroraux5.0
 i586-elf					i586-pc-elf
 i586-rdos					i586-pc-rdos
 i586-skyos					i586-pc-skyos
+i586-zephyr					i586-unknown-zephyr
 i686-android-linux				i686-unknown-linux-android
 i686-dicos					i686-pc-dicos
 i686-elf					i686-pc-elf
@@ -305,6 +311,7 @@ i686-os2-emx					i686-pc-os2-emx
 i686-wrs-vxworks				i686-wrs-vxworks
 i686-wrs-vxworks-simlinux			i686-wrs-vxworks-simlinux
 i686-wrs-vxworks-simwindows			i686-wrs-vxworks-simwindows
+i686-zephyr					i686-unknown-zephyr
 i786-elf					i786-pc-elf
 i860						i860-unknown-sysv
 i960						i960-unknown-none
@@ -389,6 +396,7 @@ mingw64						x86_64-pc-mingw64
 miniframe					m68000-convergent-sysv
 mips						mips-unknown-elf
 mips-sde-elf					mips-sde-elf
+mips-zephyr					mips-unknown-zephyr
 mips16						mips16-unknown-elf
 mips64						mips64-unknown-elf
 mips64eb					mips64eb-unknown-elf
@@ -497,6 +505,7 @@ nios						nios-unknown-none
 nios-elf					nios-unknown-elf
 nios2						nios2-unknown-none
 nios2-elf					nios2-unknown-elf
+nios2-zephyr					nios2-unknown-zephyr
 nios2eb						nios2eb-unknown-none
 nios2eb-elf					nios2eb-unknown-elf
 nios2el						nios2el-unknown-none
@@ -584,6 +593,7 @@ ppc						powerpc-unknown-none
 ppc-beos					powerpc-be-beos
 ppc-elf						powerpc-unknown-elf
 ppc-none-elf					powerpc-none-elf
+ppc-zephyr					powerpc-unknown-zephyr
 ppcbe						powerpc-unknown-none
 ppcbe-elf					powerpc-unknown-elf
 ppcbe-none-elf					powerpc-none-elf
@@ -606,12 +616,14 @@ riscv-company-hcos				riscv-company-hcos
 riscv-elf					riscv-unknown-elf
 riscv-linux					riscv-unknown-linux-gnu
 riscv-twizzler					riscv-unknown-twizzler
+riscv-zephyr					riscv-unknown-zephyr
 riscv32						riscv32-unknown-none
 riscv32-company-elf				riscv32-company-elf
 riscv32-company-hcos				riscv32-company-hcos
 riscv32-elf					riscv32-unknown-elf
 riscv32-linux					riscv32-unknown-linux-gnu
 riscv32-wrs-vxworks				riscv32-wrs-vxworks
+riscv32-zephyr					riscv32-unknown-zephyr
 riscv32be					riscv32be-unknown-none
 riscv32be-company-elf				riscv32be-company-elf
 riscv32be-company-hcos				riscv32be-company-hcos
@@ -623,6 +635,7 @@ riscv64-elf					riscv64-unknown-elf
 riscv64-hcos					riscv64-unknown-hcos
 riscv64-linux					riscv64-unknown-linux-gnu
 riscv64-wrs-vxworks				riscv64-wrs-vxworks
+riscv64-zephyr					riscv64-unknown-zephyr
 riscv64be					riscv64be-unknown-none
 riscv64be-company-elf				riscv64be-company-elf
 riscv64be-company-linux				riscv64be-company-linux-gnu
@@ -705,6 +718,7 @@ shle-elf					shle-unknown-elf
 simso-wrs					sparclite-wrs-vxworks
 sparc						sparc-sun-sunos4.1.1
 sparc-haiku					sparc-unknown-haiku
+sparc-zephyr					sparc-unknown-zephyr
 sparc64						sparc64-unknown-none
 sparc64-linux					sparc64-unknown-linux-gnu
 sparc64b					sparc64b-unknown-none
@@ -841,6 +855,7 @@ x86_64-windows					x86_64-pc-windows
 x86_64-wrs-vxworks				x86_64-wrs-vxworks
 x86_64-wrs-vxworks-simlinux			x86_64-wrs-vxworks-simlinux
 x86_64-wrs-vxworks-simwindows			x86_64-wrs-vxworks-simwindows
+x86_64-zephyr					x86_64-unknown-zephyr
 xbox						i686-pc-mingw32
 xc16x						xc16x-unknown-none
 xc16x-elf					xc16x-unknown-elf
@@ -857,6 +872,7 @@ xstormy16					xstormy16-unknown-none
 xtensa						xtensa-unknown-none
 xtensa-elf					xtensa-unknown-elf
 xtensa-linux					xtensa-unknown-linux-gnu
+xtensa-zephyr					xtensa-unknown-zephyr
 xtensa_dc232b-linux				xtensa_dc232b-unknown-linux-gnu
 ymp						ymp-cray-unicos
 z80						z80-unknown-none
