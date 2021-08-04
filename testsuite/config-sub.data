@@ -841,6 +841,7 @@ x86_64-ericsson-dicos				x86_64-ericsson-dicos
 x86_64-fuchsia					x86_64-pc-fuchsia
 x86_64-genode					x86_64-pc-genode
 x86_64-glidix					x86_64-pc-glidix
+x86_64-linux-relibc				x86_64-pc-linux-relibc
 x86_64-nto					x86_64-pc-nto-qnx
 x86_64-os108					x86_64-pc-os108
 x86_64-pc-ptx					x86_64-pc-ptx
