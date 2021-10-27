@@ -262,6 +262,7 @@ i386-cloudabi					i386-pc-cloudabi
 i386-drops1.0					i386-pc-drops1.0
 i386-elf					i386-pc-elf
 i386-es						i386-pc-es
+i386-fiwix					i386-pc-fiwix
 i386-freebsd					i386-pc-freebsd
 i386-glidix					i386-pc-glidix
 i386-haiku					i386-pc-haiku
