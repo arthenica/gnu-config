@@ -26,6 +26,7 @@ aarch64_be-elf					aarch64_be-unknown-elf
 aarch64_be-linux				aarch64_be-unknown-linux-gnu
 aarch64_be-unknown-elf				aarch64_be-unknown-elf
 aarch64_be-unknown-linux			aarch64_be-unknown-linux-gnu
+aarch64le-qnx					aarch64-unknown-qnx
 abacus						abacus-unknown-none
 adobe68k					m68010-adobe-scout
 alliant						fx80-alliant-none
