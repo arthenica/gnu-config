@@ -95,6 +95,8 @@ arm64-apple-ios					aarch64-apple-ios
 armbe						armbe-unknown-none
 armeb-unknown-netbsdelf7.0			armeb-unknown-netbsdelf7.0
 armel						armel-unknown-none
+armh						armv7l-alt-linux-gnueabihf
+armh-alt-linux-gnueabihf			armv7l-alt-linux-gnueabihf
 armle						armle-unknown-none
 armv2						armv2-unknown-none
 armv3l						armv3l-unknown-none
