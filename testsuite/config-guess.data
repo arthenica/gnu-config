@@ -24,6 +24,7 @@ SX-7 | 1.0 | SUPER-UX | ignored | ignored | sx7-nec-superux1.0
 SX-8 | 1.0 | SUPER-UX | ignored | ignored | sx8-nec-superux1.0
 SX-8R | 1.0 | SUPER-UX | ignored | ignored | sx8r-nec-superux1.0
 SX-ACE | 1.0 | SUPER-UX | ignored | ignored | sxace-nec-superux1.0
+aarch64 | ignored | Haiku | ignored | ignored | aarch64-unknown-haiku
 aarch64 | ignored | Linux | ignored | ignored | aarch64-unknown-linux-gnu
 aarch64_be | ignored | Linux | ignored | ignored | aarch64_be-unknown-linux-gnu
 amd64 | 1.5.12(0.116/4/2) | CYGWIN_NT-5.2 | ignored | ignored | x86_64-pc-cygwin
@@ -40,6 +41,7 @@ arceb | ignored | Linux | ignored | ignored | arceb-unknown-linux-gnu
 arm | 12.0 | FreeBSD | ignored | armv6 | armv6-unknown-freebsd12.0-gnueabihf
 arm | 12.0 | FreeBSD | ignored | armv7 | armv7-unknown-freebsd12.0-gnueabihf
 arm | 12.1 | AROS | ignored | armv7 | arm-unknown-aros
+arm | ignored | Haiku | ignored | ignored | arm-unknown-haiku
 arm | ignored | Linux | ignored | ignored | arm-unknown-linux-gnueabihf
 arm | ignored | RISCOS | ignored | ignored | arm-unknown-riscos
 arm | ignored | riscos | ignored | ignored | arm-unknown-riscos
@@ -106,11 +108,13 @@ padre | 2.6.15 | Linux | ignored | ignored | sparc-unknown-linux-gnu
 pc | 1.0 | ignored | ignored | ignored | i586-pc-msdosdjgpp
 powerpc | 14.0 | Darwin | ignored | powerpc | powerpc-apple-darwin14.0
 ppc | 2.6.9-22 | Linux | ignored | ignored | powerpc-unknown-linux-gnu
+ppc | ignored | Haiku | ignored | ignored | powerpc-apple-haiku
 ppc64 | 2.6.9-22 | Linux | ignored | ignored | powerpc64-unknown-linux-gnu
 ppc64le | 3.1.0 | Linux | ignored | ignored | powerpc64le-unknown-linux-gnu
 riscv | 1.0 | Twizzler | ignored | ignored | riscv-unknown-twizzler
 riscv32 | ignored | Linux | ignored | ignored | riscv32-unknown-linux-gnu
 riscv32be | ignored | Linux | ignored | ignored | riscv32be-unknown-linux-gnu
+riscv64 | ignored | Haiku | ignored | ignored | riscv64-unknown-haiku
 riscv64 | ignored | Linux | ignored | ignored | riscv64-unknown-linux-gnu
 riscv64be | ignored | Linux | ignored | ignored | riscv64be-unknown-linux-gnu
 s390x | 5.6 | SunOS | ignored | ignored | s390x-ibm-solaris2.6
