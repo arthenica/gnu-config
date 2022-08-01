@@ -353,10 +353,6 @@ loongarch64					loongarch64-unknown-none
 loongarch64-elf					loongarch64-unknown-elf
 loongarch64-linux				loongarch64-unknown-linux-gnu
 loongarch64-loongson-elf			loongarch64-loongson-elf
-loongarchx32					loongarchx32-unknown-none
-loongarchx32-elf				loongarchx32-unknown-elf
-loongarchx32-linux				loongarchx32-unknown-linux-gnu
-loongarchx32-loongson-elf			loongarchx32-loongson-elf
 m3230						mips-mips-sysv
 m32c						m32c-unknown-none
 m32c-elf					m32c-unknown-elf
