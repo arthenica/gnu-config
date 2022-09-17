@@ -26,6 +26,7 @@ SX-8R | 1.0 | SUPER-UX | ignored | ignored | sx8r-nec-superux1.0
 SX-ACE | 1.0 | SUPER-UX | ignored | ignored | sxace-nec-superux1.0
 aarch64 | ignored | Haiku | ignored | ignored | aarch64-unknown-haiku
 aarch64 | ignored | Linux | ignored | ignored | aarch64-unknown-linux-gnu
+aarch64 | ignored | Managarm | ignored | ignored | aarch64-unknown-managarm-mlibc
 aarch64_be | ignored | Linux | ignored | ignored | aarch64_be-unknown-linux-gnu
 amd64 | 1.5.12(0.116/4/2) | CYGWIN_NT-5.2 | ignored | ignored | x86_64-pc-cygwin
 amd64 | 6.1.4 | NetBSD | ignored | x86_64 | x86_64-unknown-netbsd6.1
@@ -115,6 +116,7 @@ riscv32 | ignored | Linux | ignored | ignored | riscv32-unknown-linux-gnu
 riscv32be | ignored | Linux | ignored | ignored | riscv32be-unknown-linux-gnu
 riscv64 | ignored | Haiku | ignored | ignored | riscv64-unknown-haiku
 riscv64 | ignored | Linux | ignored | ignored | riscv64-unknown-linux-gnu
+riscv64 | ignored | Managarm | ignored | ignored | riscv64-unknown-managarm-mlibc
 riscv64be | ignored | Linux | ignored | ignored | riscv64be-unknown-linux-gnu
 s390x | 5.6 | SunOS | ignored | ignored | s390x-ibm-solaris2.6
 sun3 | 4.0 | SunOS | ignored | ignored | m68k-sun-sunos4.0
@@ -140,4 +142,5 @@ x86_64 | 2.6.32 | Linux | ignored | ignored | x86_64-pc-linux-gnu
 x86_64 | 2.6.32 | VMkernel | ignored | ignored | x86_64-unknown-esx
 x86_64 | 8.0 | OS108 | ignored | ignored | x86_64-unknown-os108_8.0
 x86_64 | 1.0-dev | SerenityOS | ignored | ignored | x86_64-pc-serenity
+x86_64 | ignored | Managarm | ignored | ignored | x86_64-pc-managarm-mlibc
 xtensa | 2.6.15 | Linux | ignored | ignored | xtensa-unknown-linux-gnu
