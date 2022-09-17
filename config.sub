@@ -1779,7 +1779,7 @@ esac
 # (given a valid OS), if there is a kernel.
 case $kernel-$os in
 	linux-gnu* | linux-dietlibc* | linux-android* | linux-newlib* \
-		   | linux-musl* | linux-relibc* | linux-uclibc* )
+		   | linux-musl* | linux-relibc* | linux-uclibc* | linux-mlibc* )
 		;;
 	uclinux-uclibc* )
 		;;
