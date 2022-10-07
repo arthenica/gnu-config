@@ -82,11 +82,11 @@ i586 | 1.0 | SolidBSD | ignored | ignored | i586-unknown-solidbsd1.0
 i586 | 5.0.0 | skyos | ignored | ignored | i586-pc-skyos5.0.0
 i586 | ignored | rdos | ignored | ignored | i586-pc-rdos
 i686 | 1.0 | MidnightBSD | ignored | ignored | i686-unknown-midnightbsd1.0
+i686 | 1.0-dev | SerenityOS | ignored | ignored | i686-pc-serenity
 i686 | 1.0.17(0.48/3/2) | MSYS_NT-6.0 | ignored | ignored | i686-pc-msys
+i686 | 3.0 | Linux | ignored | ignored | i686-pc-linux-gnu
 i686 | 5.11-686 | GNU/kOpenSolaris | ignored | ignored | i686-unknown-kopensolaris5.11-gnu
 i686 | 5.4-1-686 | GNU/kFreeBSD | ignored | ignored | i686-unknown-kfreebsd5.4-gnu
-i686 | 3.0 | Linux | ignored | ignored | i686-pc-linux-gnu
-i686 | 1.0-dev | SerenityOS | ignored | ignored | i686-pc-serenity
 i86pc | 5.0 | AuroraUX | ignored | ignored | i386-pc-auroraux5.0
 i86pc | 5.6 | SunOS | ignored | ignored | i386-pc-solaris2.6
 i86xen | 5.0 | AuroraUX | ignored | ignored | i386-pc-auroraux5.0
@@ -133,6 +133,7 @@ x86_64 | 1.0 | MINGW64 | ignored | ignored | x86_64-pc-mingw64
 x86_64 | 1.0 | Redox | ignored | ignored | x86_64-unknown-redox
 x86_64 | 1.0 | Sortix | ignored | ignored | x86_64-unknown-sortix
 x86_64 | 1.0 | Twizzler | ignored | ignored | x86_64-unknown-twizzler
+x86_64 | 1.0-dev | SerenityOS | ignored | ignored | x86_64-pc-serenity
 x86_64 | 1.1 | Unleashed | ignored | ignored | x86_64-unknown-unleashed1.1
 x86_64 | 1.5.18(0.132/4/2) | CYGWIN_NT-5.2 | ignored | ignored | x86_64-pc-cygwin
 x86_64 | 12.1 | AROS | ignored | ignored | x86_64-unknown-aros
@@ -141,6 +142,5 @@ x86_64 | 2.0.0(0.271/5/3) | MSYS_NT-6.1 | ignored | ignored | x86_64-pc-msys
 x86_64 | 2.6.32 | Linux | ignored | ignored | x86_64-pc-linux-gnu
 x86_64 | 2.6.32 | VMkernel | ignored | ignored | x86_64-unknown-esx
 x86_64 | 8.0 | OS108 | ignored | ignored | x86_64-unknown-os108_8.0
-x86_64 | 1.0-dev | SerenityOS | ignored | ignored | x86_64-pc-serenity
 x86_64 | ignored | Managarm | ignored | ignored | x86_64-pc-managarm-mlibc
 xtensa | 2.6.15 | Linux | ignored | ignored | xtensa-unknown-linux-gnu
