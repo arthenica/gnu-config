@@ -91,7 +91,9 @@ arm-sysgo-pikeos				arm-sysgo-eabi
 arm-tirtos					arm-unknown-tirtos
 arm-uclinux-uclibcgnueabi			arm-unknown-uclinux-uclibcgnueabi
 arm-unknown-netbsdelf7.0			arm-unknown-netbsdelf7.0
+arm-unknown-none-coff				arm-unknown-none-coff
 arm-unknown-none-eabi				arm-unknown-none-eabi
+arm-unknown-none-elf				arm-unknown-none-elf
 arm-unknown-riscos				arm-unknown-riscos
 arm-zephyr					arm-unknown-zephyr
 arm64-apple-darwin20.0.0			aarch64-apple-darwin20.0.0
@@ -639,6 +641,7 @@ riscv32be-elf					riscv32be-unknown-elf
 riscv32be-linux					riscv32be-unknown-linux-gnu
 riscv64						riscv64-unknown-none
 riscv64-company-elf				riscv64-company-elf
+riscv64-company-none-elf			riscv64-company-none-elf
 riscv64-elf					riscv64-unknown-elf
 riscv64-hcos					riscv64-unknown-hcos
 riscv64-linux					riscv64-unknown-linux-gnu

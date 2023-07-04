@@ -4,7 +4,7 @@
 
 # shellcheck disable=SC2006,SC2268 # see below for rationale
 
-timestamp='2023-06-26'
+timestamp='2023-07-04'
 
 # This file is free software; you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by
@@ -1815,6 +1815,10 @@ case $kernel-$os in
 	os2-emx)
 		;;
 	*-eabi* | *-gnueabi*)
+		;;
+	none-coff* | none-elf*)
+		# None (no kernel, i.e. freestanding / bare metal),
+		# can be paired with an output format "OS"
 		;;
 	-*)
 		# Blank kernel with real OS is always fine.
