@@ -98,6 +98,10 @@ arm-unknown-riscos				arm-unknown-riscos
 arm-zephyr					arm-unknown-zephyr
 arm64-apple-darwin20.0.0			aarch64-apple-darwin20.0.0
 arm64-apple-ios					aarch64-apple-ios
+arm64-apple-tvos				aarch64-apple-tvos
+arm64-apple-tvos10.0.0				aarch64-apple-tvos10.0.0
+arm64-apple-watchos				aarch64-apple-watchos
+arm64-apple-watchos5.0				aarch64-apple-watchos5.0
 armbe						armbe-unknown-none
 armeb-unknown-netbsdelf7.0			armeb-unknown-netbsdelf7.0
 armel						armel-unknown-none
