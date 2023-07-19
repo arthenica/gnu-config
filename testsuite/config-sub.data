@@ -343,6 +343,14 @@ j90-cray					j90-cray-unicos
 j90-unicos					j90-cray-unicos
 k1om						k1om-unknown-none
 k1om-linux					k1om-unknown-linux-gnu
+kvx-cos						kvx-unknown-cos
+kvx-elf						kvx-unknown-elf
+kvx-linux					kvx-unknown-linux-gnu
+kvx-linux-gnu					kvx-unknown-linux-gnu
+kvx-linux-musl					kvx-unknown-linux-musl
+kvx-linux-newlib				kvx-unknown-linux-newlib
+kvx-linux-uclibc				kvx-unknown-linux-uclibc
+kvx-mbr						kvx-unknown-mbr
 le32						le32-unknown-none
 le32-nacl					le32-unknown-nacl
 le64						le64-unknown-none

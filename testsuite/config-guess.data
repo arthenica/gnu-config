@@ -92,6 +92,9 @@ i86pc | 5.6 | SunOS | ignored | ignored | i386-pc-solaris2.6
 i86xen | 5.0 | AuroraUX | ignored | ignored | i386-pc-auroraux5.0
 i86xen | 5.6 | SunOS | ignored | ignored | i386-pc-solaris2.6
 k1om | 2.6.38 | Linux | ignored | ignored | k1om-unknown-linux-gnu
+kvx | ignored | Linux | ignored | ignored | kvx-unknown-linux-gnu
+kvx | ignored | cos | ignored | ignored | kvx-unknown-cos
+kvx | ignored | mbr | ignored | ignored | kvx-unknown-mbr
 loongarch32 | ignored | Linux | ignored | ignored | loongarch32-unknown-linux-gnu
 loongarch64 | ignored | Linux | ignored | ignored | loongarch64-unknown-linux-gnu
 m68k | 12.1 | AROS | ignored | ignored | m68k-unknown-aros
