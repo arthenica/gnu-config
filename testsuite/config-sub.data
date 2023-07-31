@@ -420,6 +420,10 @@ mips64						mips64-unknown-elf
 mips64eb					mips64eb-unknown-elf
 mips64el					mips64el-unknown-elf
 mips64octeon					mips64octeon-unknown-elf
+mips64octeon+					mips64octeon+-unknown-elf
+mips64octeon+-elf				mips64octeon+-unknown-elf
+mips64octeon+el					mips64octeon+el-unknown-elf
+mips64octeon+el-elf				mips64octeon+el-unknown-elf
 mips64octeon-elf				mips64octeon-unknown-elf
 mips64octeonel					mips64octeonel-unknown-elf
 mips64octeonel-elf				mips64octeonel-unknown-elf
@@ -444,6 +448,8 @@ mips64vrel					mips64vrel-unknown-elf
 mipsbe						mipsbe-unknown-elf
 mipseb						mipseb-unknown-elf
 mipsel						mipsel-unknown-elf
+mipsinteraptiv					mipsinteraptiv-unknown-elf
+mipsinteraptivel				mipsinteraptivel-unknown-elf
 mipsisa32					mipsisa32-unknown-elf
 mipsisa32el					mipsisa32el-unknown-elf
 mipsisa32r2					mipsisa32r2-unknown-elf
