@@ -405,6 +405,7 @@ metag						metag-unknown-none
 metag-linux					metag-unknown-linux-gnu
 microblaze					microblaze-xilinx-none
 microblaze-elf					microblaze-xilinx-elf
+microblaze-unknown-elf				microblaze-xilinx-elf
 microblaze-linux				microblaze-xilinx-linux-gnu
 microblazeel					microblazeel-xilinx-none
 microblazeel-elf				microblazeel-xilinx-elf
@@ -488,6 +489,7 @@ mipstx39el					mipstx39el-unknown-elf
 mmax						ns32k-encore-bsd
 mmix						mmix-knuth-mmixware
 mmix-elf					mmix-knuth-elf
+mmix-unknown-elf				mmix-knuth-elf
 mn10200						mn10200-unknown-none
 mn10300						mn10300-unknown-none
 mon960						i960-intel-mon960
@@ -686,6 +688,7 @@ s390						s390-ibm-none
 s390-busybox-linux				s390-busybox-linux-gnu
 s390-ibm-zvmoe					s390-ibm-zvmoe
 s390-linux					s390-ibm-linux-gnu
+s390-unknown-elf				s390-ibm-elf
 s390x						s390x-ibm-none
 s390x-busybox-linux				s390x-busybox-linux-gnu
 s390x-ibm-zvmoe					s390x-ibm-zvmoe
