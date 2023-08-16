@@ -343,6 +343,8 @@ isi68						m68k-isi-sysv
 j90						j90-cray-unicos
 j90-cray					j90-cray-unicos
 j90-unicos					j90-cray-unicos
+javascript-ghcjs				javascript-unknown-ghcjs
+javascript-unknown-ghcjs			javascript-unknown-ghcjs
 k1om						k1om-unknown-none
 k1om-linux					k1om-unknown-linux-gnu
 kvx-cos						kvx-unknown-cos
