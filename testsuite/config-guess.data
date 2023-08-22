@@ -29,6 +29,7 @@ aarch64 | ignored | Linux | ignored | ignored | aarch64-unknown-linux-gnu
 aarch64 | ignored | Managarm | ignored | ignored | aarch64-unknown-managarm-mlibc
 aarch64_be | ignored | Linux | ignored | ignored | aarch64_be-unknown-linux-gnu
 amd64 | 1.5.12(0.116/4/2) | CYGWIN_NT-5.2 | ignored | ignored | x86_64-pc-cygwin
+amd64 | 5.2 | FreeBSD | ignored | x86_64 | x86_64-unknown-freebsd5.2
 amd64 | 6.1.4 | NetBSD | ignored | x86_64 | x86_64-unknown-netbsd6.1
 amd64 | 6.1.5_PATCH | NetBSD | ignored | x86_64 | x86_64-unknown-netbsd6.1
 amd64 | 7.0 | NetBSD | ignored | x86_64 | x86_64-unknown-netbsd7.0
@@ -109,6 +110,7 @@ or1knd | ignored | Linux | ignored | ignored | or1knd-unknown-linux-gnu
 or32 | ignored | Linux | ignored | ignored | or32-unknown-linux-gnu
 padre | 2.6.15 | Linux | ignored | ignored | sparc-unknown-linux-gnu
 pc | 1.0 | ignored | ignored | ignored | i586-pc-msdosdjgpp
+pc98 | 7.0 | FreeBSD | ignored | i386 | i586-unknown-freebsd7.0
 powerpc | 14.0 | Darwin | ignored | powerpc | powerpc-apple-darwin14.0
 ppc | 2.6.9-22 | Linux | ignored | ignored | powerpc-unknown-linux-gnu
 ppc | ignored | Haiku | ignored | ignored | powerpc-apple-haiku
