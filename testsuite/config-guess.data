@@ -28,6 +28,7 @@ aarch64 | ignored | Haiku | ignored | ignored | aarch64-unknown-haiku
 aarch64 | ignored | Linux | ignored | ignored | aarch64-unknown-linux-gnu
 aarch64 | ignored | Managarm | ignored | ignored | aarch64-unknown-managarm-mlibc
 aarch64_be | ignored | Linux | ignored | ignored | aarch64_be-unknown-linux-gnu
+aarch64c | 14.0 | FreeBSD | ignored | aarch64c | aarch64c-unknown-freebsd14.0
 amd64 | 1.5.12(0.116/4/2) | CYGWIN_NT-5.2 | ignored | ignored | x86_64-pc-cygwin
 amd64 | 5.2 | FreeBSD | ignored | x86_64 | x86_64-unknown-freebsd5.2
 amd64 | 6.1.4 | NetBSD | ignored | x86_64 | x86_64-unknown-netbsd6.1
