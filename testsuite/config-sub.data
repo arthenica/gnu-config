@@ -897,7 +897,6 @@ x86_64-sortix					x86_64-pc-sortix
 x86_64-twizzler				x86_64-pc-twizzler
 x86_64-unknown-ptx				x86_64-sequent-ptx
 x86_64-windows					x86_64-pc-windows
-x86_64-windows-gnu				x86_64-pc-windows-gnu
 x86_64-windows-msvc				x86_64-pc-windows-msvc
 x86_64-wrs-vxworks				x86_64-wrs-vxworks
 x86_64-wrs-vxworks-simlinux			x86_64-wrs-vxworks-simlinux
