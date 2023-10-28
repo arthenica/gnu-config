@@ -4,7 +4,7 @@
 
 # shellcheck disable=SC2006,SC2268 # see below for rationale
 
-timestamp='2023-10-19'
+timestamp='2023-10-28'
 
 # This file is free software; you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by
@@ -1253,6 +1253,7 @@ case $cpu-$vendor in
 			| ubicom32 \
 			| v70 | v850 | v850e | v850e1 | v850es | v850e2 | v850e2v3 \
 			| vax \
+			| vc4 \
 			| visium \
 			| w65 \
 			| wasm32 | wasm64 \
