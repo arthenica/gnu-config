@@ -22,6 +22,7 @@ aarch64-managarm-kernel				aarch64-unknown-managarm-kernel
 aarch64-managarm-mlibc				aarch64-unknown-managarm-mlibc
 aarch64-unknown-elf				aarch64-unknown-elf
 aarch64-unknown-linux				aarch64-unknown-linux-gnu
+aarch64-unknown-uefi				aarch64-unknown-uefi
 aarch64-wrs-vxworks				aarch64-wrs-vxworks
 aarch64-zephyr					aarch64-unknown-zephyr
 aarch64_be					aarch64_be-unknown-none
@@ -328,6 +329,7 @@ i686-ericsson-dicos				i686-ericsson-dicos
 i686-haiku					i686-pc-haiku
 i686-kopensolaris5.11-gnu			i686-pc-kopensolaris5.11-gnu
 i686-os2-emx					i686-pc-os2-emx
+i686-unknown-uefi				i686-unknown-uefi
 i686-wrs-vxworks				i686-wrs-vxworks
 i686-wrs-vxworks-simlinux			i686-wrs-vxworks-simlinux
 i686-wrs-vxworks-simwindows			i686-wrs-vxworks-simwindows
@@ -898,6 +900,7 @@ x86_64-secbsd					x86_64-pc-secbsd
 x86_64-sortix					x86_64-pc-sortix
 x86_64-twizzler				x86_64-pc-twizzler
 x86_64-unknown-ptx				x86_64-sequent-ptx
+x86_64-unknown-uefi				x86_64-unknown-uefi
 x86_64-windows					x86_64-pc-windows
 x86_64-windows-msvc				x86_64-pc-windows-msvc
 x86_64-wrs-vxworks				x86_64-wrs-vxworks
