@@ -149,4 +149,5 @@ x86_64 | 2.6.32 | Linux | ignored | ignored | x86_64-pc-linux-gnu
 x86_64 | 2.6.32 | VMkernel | ignored | ignored | x86_64-unknown-esx
 x86_64 | 8.0 | OS108 | ignored | ignored | x86_64-unknown-os108_8.0
 x86_64 | ignored | Managarm | ignored | ignored | x86_64-pc-managarm-mlibc
+x86_64 | ignored | Ironclad | ignored | ignored | x86_64-unknown-ironclad
 xtensa | 2.6.15 | Linux | ignored | ignored | xtensa-unknown-linux-gnu
