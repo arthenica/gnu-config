@@ -884,6 +884,7 @@ x86_64-ericsson-dicos				x86_64-ericsson-dicos
 x86_64-fuchsia					x86_64-pc-fuchsia
 x86_64-genode					x86_64-pc-genode
 x86_64-glidix					x86_64-pc-glidix
+x86_64-ironclad					x86_64-pc-ironclad
 x86_64-linux-llvm				x86_64-pc-linux-llvm
 x86_64-linux-mlibc				x86_64-pc-linux-mlibc
 x86_64-linux-relibc				x86_64-pc-linux-relibc
