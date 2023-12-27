@@ -516,6 +516,7 @@ mt						mt-unknown-none
 mt-elf						mt-unknown-elf
 mvs						i370-ibm-mvs
 nacl						le32-unknown-nacl
+nanomips					nanomips-unknown-elf
 ncr3000						i486-ncr-sysv4
 nds32						nds32-unknown-none
 nds32-elf					nds32-unknown-elf
