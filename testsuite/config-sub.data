@@ -107,6 +107,8 @@ arm64-apple-tvos				aarch64-apple-tvos
 arm64-apple-tvos10.0.0				aarch64-apple-tvos10.0.0
 arm64-apple-watchos				aarch64-apple-watchos
 arm64-apple-watchos5.0				aarch64-apple-watchos5.0
+arm64e-apple-darwin20.0.0			arm64e-apple-darwin20.0.0
+arm64e-apple-ios				arm64e-apple-ios
 arm64ec-pc-mingw32				arm64ec-pc-mingw32
 arm64ec-windows 				arm64ec-unknown-windows
 armbe						armbe-unknown-none
