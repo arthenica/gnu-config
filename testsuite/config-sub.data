@@ -87,13 +87,16 @@ arceb						arceb-unknown-none
 arceb-elf					arceb-unknown-elf
 arceb-linux					arceb-unknown-linux-gnu
 arm						arm-unknown-none
+arm-acorn					arm-acorn-riscix1.2
 arm-cegcc					arm-unknown-cegcc
 arm-coff					arm-unknown-coff
 arm-elf						arm-unknown-elf
 arm-linux-androideabi				arm-unknown-linux-androideabi
 arm-mingw32ce					arm-unknown-mingw32ce
 arm-pikeos					arm-unknown-eabi
+arm-rebel					arm-rebel-linux-gnu
 arm-riscos					arm-unknown-riscos
+arm-semi					arm-semi-aout
 arm-sysgo-pikeos				arm-sysgo-eabi
 arm-tirtos					arm-unknown-tirtos
 arm-uclinux-gnueabi				arm-unknown-uclinux-gnueabi
@@ -115,6 +118,8 @@ arm64-apple-watchos5.0				aarch64-apple-watchos5.0
 arm64e-apple-darwin20.0.0			arm64e-apple-darwin20.0.0
 arm64e-apple-ios				arm64e-apple-ios
 arm64ec-pc-mingw32				arm64ec-pc-mingw32
+arm64ec-wince					arm64ec-unknown-wince
+arm64ec-wince98					arm64ec-unknown-wince
 arm64ec-windows					arm64ec-unknown-windows
 armbe						armbe-unknown-none
 armeb-unknown-netbsdelf7.0			armeb-unknown-netbsdelf7.0
@@ -213,6 +218,7 @@ c90-unknown-unicos				c90-cray-unicos
 cegcc						arm-unknown-cegcc
 clipper						clipper-unknown-none
 clipper-clix					clipper-intergraph-clix
+clipper-intergraph				clipper-intergraph-clix
 convex-c1					c1-convex-bsd
 convex-c2					c2-convex-bsd
 convex-c32					c32-convex-bsd
@@ -337,12 +343,18 @@ i386-next-openstep4				i386-next-openstep4
 i386-nova					i386-pc-rtmk-nova
 i386-openbsd					i386-pc-openbsd
 i386-os2					i386-pc-os2
+i386-pc-atheos					i386-pc-atheos
+i386-pc-atheos2					i386-pc-atheos
+i386-pc-chorusos				i386-pc-chorusos
+i386-pc-chorusos2				i386-pc-chorusos
 i386-pc-nacl					i386-pc-nacl
 i386-pc-sco					i386-pc-sco3.2v2
 i386-pc-sco4					i386-pc-sco3.2v4
 i386-pc-sco5					i386-pc-sco3.2v5
 i386-pc-sco5v6					i386-pc-sco5v6
 i386-pc-sco6					i386-pc-sco5v6
+i386-pc-syllable				i386-pc-syllable
+i386-pc-syllable2				i386-pc-syllable
 i386-phoenix					i386-pc-phoenix
 i386-plan9					i386-pc-plan9
 i386-serenity					i386-pc-serenity
@@ -375,6 +387,7 @@ i686-wrs-vxworks-simwindows			i686-wrs-vxworks-simwindows
 i686-zephyr					i686-unknown-zephyr
 i786-elf					i786-pc-elf
 i860						i860-unknown-sysv
+i860-stratus					i860-stratus-sysv
 i960						i960-unknown-none
 ia16						ia16-unknown-none
 ia64						ia64-unknown-none
@@ -429,7 +442,10 @@ m68000						m68000-unknown-none
 m68000-sun					m68000-sun-sunos3
 m68hcs12z					s12z-unknown-none
 m68k						m68k-unknown-none
+m68k-atari					m68k-atari-mint
 m68k-bull					m68k-bull-sysv3
+m68k-ccur					m68k-ccur-rtu
+m68k-commodore					m68k-cbm-amigaos
 m68k-es1800					m68k-unknown-ose
 m68k-mint					m68k-atari-mint
 m68k-next-nextstep				m68k-next-nextstep
@@ -447,6 +463,10 @@ m68k-next-openstep1				m68k-next-nextstep
 m68k-next-openstep2				m68k-next-nextstep2
 m68k-next-openstep3				m68k-next-openstep3
 m68k-next-openstep4				m68k-next-openstep4
+m68k-psos					m68k-unknown-psos
+m68k-psos2					m68k-unknown-psos
+m68k-rom68k					m68k-rom68k-coff
+m68k-rombug					m68k-rombug-coff
 m68knommu					m68k-unknown-linux-gnu
 m68knommu-elf					m68k-unknown-elf
 m68knommu-linux					m68k-unknown-linux-gnu
@@ -587,6 +607,7 @@ nds32be						nds32be-unknown-none
 nds32le						nds32le-unknown-none
 nds32le-elf					nds32le-unknown-elf
 necv70						v70-nec-sysv
+necv810						v810-nec-none
 netbsd386					i386-pc-netbsd
 netwinder					armv4l-rebel-linux-gnu
 news						m68k-sony-newsos
@@ -693,6 +714,7 @@ powerpcle					powerpcle-unknown-none
 powerpcspe					powerpcspe-unknown-none
 powerpcspe-elf					powerpcspe-unknown-elf
 ppc						powerpc-unknown-none
+ppc-be						powerpc-be-beos
 ppc-beos					powerpc-be-beos
 ppc-elf						powerpc-unknown-elf
 ppc-none-elf					powerpc-none-elf
@@ -927,6 +949,7 @@ ultra3						a29k-nyu-sym1
 umax						ns32k-encore-bsd
 unixpc						m68000-att-sysv
 unos						m68k-crds-unos
+v810						v810-nec-none
 v850						v850-unknown-none
 v850-elf					v850-unknown-elf
 v850e						v850e-unknown-none

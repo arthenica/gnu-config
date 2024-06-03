@@ -194,14 +194,19 @@ case $1 in
 					| 3300* \
 					| 3600* \
 					| 7300* \
+					| acorn \
 					| altos* \
 					| apollo \
 					| apple \
+					| atari \
 					| att* \
 					| axis \
+					| be \
 					| bull \
 					| cbm \
+					| ccur \
 					| cisco \
+					| commodore \
 					| convergent* \
 					| convex* \
 					| cray \
@@ -218,6 +223,7 @@ case $1 in
 					| hitachi* \
 					| hp \
 					| ibm* \
+					| intergraph \
 					| isi* \
 					| knuth \
 					| masscomp \
@@ -231,14 +237,21 @@ case $1 in
 					| oki \
 					| omron* \
 					| pc533* \
+					| rebel \
+					| rom68k \
+					| rombug \
+					| semi \
 					| sequent* \
 					| siemens \
 					| sgi* \
+					| siemens \
 					| sim \
 					| sni \
 					| sony* \
+					| stratus \
 					| sun \
 					| sun[234]* \
+					| tektronix \
 					| tti* \
 					| ultra \
 					| unicom* \
@@ -1430,6 +1443,7 @@ case $cpu-$vendor in
 			| tron \
 			| ubicom32 \
 			| v70 \
+			| v810 \
 			| v850 \
 			| v850e \
 			| v850e1 \
@@ -1959,6 +1973,7 @@ case $os in
 	| aof* \
 	| aos* \
 	| aros* \
+	| atheos* \
 	| auroraux* \
 	| aux* \
 	| beos* \
@@ -1967,6 +1982,7 @@ case $os in
 	| bosx* \
 	| bsd* \
 	| cegcc* \
+	| chorusos* \
 	| chorusrdb* \
 	| clix* \
 	| cloudabi* \
@@ -2071,6 +2087,7 @@ case $os in
 	| powermax* \
 	| powerunix* \
 	| proelf* \
+	| psos* \
 	| psp* \
 	| ptx* \
 	| pw32* \
@@ -2096,6 +2113,7 @@ case $os in
 	| sunos \
 	| sunos[34]* \
 	| superux* \
+	| syllable* \
 	| sym* \
 	| sysv* \
 	| tenex* \
@@ -2124,6 +2142,7 @@ case $os in
 	| vxworks* \
 	| wasi* \
 	| watchos* \
+	| wince* \
 	| windiss* \
 	| windows* \
 	| winnt* \
