@@ -141,10 +141,20 @@ case $1 in
 		# parts
 		maybe_os=$field2-$field3
 		case $maybe_os in
-			nto-qnx* | linux-* | uclinux-uclibc* \
-			| uclinux-gnu* | kfreebsd*-gnu* | knetbsd*-gnu* | netbsd*-gnu* \
-			| netbsd*-eabi* | kopensolaris*-gnu* | cloudabi*-eabi* \
-			| storm-chaos* | os2-emx* | rtmk-nova* | managarm-* \
+			  cloudabi*-eabi* \
+			| kfreebsd*-gnu* \
+			| knetbsd*-gnu* \
+			| kopensolaris*-gnu* \
+			| linux-* \
+			| managarm-* \
+			| netbsd*-eabi* \
+			| netbsd*-gnu* \
+			| nto-qnx* \
+			| os2-emx* \
+			| rtmk-nova* \
+			| storm-chaos* \
+			| uclinux-gnu* \
+			| uclinux-uclibc* \
 			| windows-* )
 				basic_machine=$field1
 				basic_os=$maybe_os
@@ -169,27 +179,71 @@ case $1 in
 			*-*)
 				# Second component is usually, but not always the OS
 				case $field2 in
-					# Prevent following clause from handling this valid os
+					# Do not treat sunos as a manufacturer
 					sun*os*)
 						basic_machine=$field1
 						basic_os=$field2
 						;;
+					# Manufacturers
+					  3100* \
+					| 32* \
+					| 3300* \
+					| 3600* \
+					| 7300* \
+					| altos* \
+					| apollo \
+					| apple \
+					| att* \
+					| axis \
+					| c[123]* \
+					| cbm \
+					| cisco \
+					| convergent* \
+					| convex* \
+					| cray \
+					| crds \
+					| dec* \
+					| delta* \
+					| dg \
+					| dolphin \
+					| encore* \
+					| gould \
+					| harris \
+					| highlevel \
+					| hitachi* \
+					| hp \
+					| ibm* \
+					| isi* \
+					| knuth \
+					| masscomp \
+					| microblaze* \
+					| mips* \
+					| motorola* \
+					| ncr* \
+					| news \
+					| next \
+					| ns \
+					| oki \
+					| omron* \
+					| pc533* \
+					| sequent* \
+					| sgi* \
+					| sim \
+					| sony* \
+					| sun \
+					| sun[234]* \
+					| tti* \
+					| ultra \
+					| unicom* \
+					| wec \
+					| winbond \
+					| wrs)
+						basic_machine=$field1-$field2
+						basic_os=
+						;;
 					zephyr*)
 						basic_machine=$field1-unknown
 						basic_os=$field2
-						;;
-					# Manufacturers
-					dec* | mips* | sequent* | encore* | pc533* | sgi* | sony* \
-					| att* | 7300* | 3300* | delta* | motorola* | sun[234]* \
-					| unicom* | ibm* | next | hp | isi* | apollo | altos* \
-					| convergent* | ncr* | news | 32* | 3600* | 3100* \
-					| hitachi* | c[123]* | convex* | sun | crds | omron* | dg \
-					| ultra | tti* | harris | dolphin | highlevel | gould \
-					| cbm | ns | masscomp | apple | axis | knuth | cray \
-					| microblaze* | sim | cisco \
-					| oki | wec | wrs | winbond)
-						basic_machine=$field1-$field2
-						basic_os=
 						;;
 					*)
 						basic_machine=$field1
@@ -713,8 +767,7 @@ case $basic_machine in
 		vendor=dec
 		basic_os=tops20
 		;;
-	delta | 3300 | motorola-3300 | motorola-delta \
-	      | 3300-motorola | delta-motorola)
+	delta | 3300 | delta-motorola | 3300-motorola | motorola-delta | motorola-3300)
 		cpu=m68k
 		vendor=motorola
 		;;
@@ -1177,90 +1230,226 @@ case $cpu-$vendor in
 		# Recognize the canonical CPU types that are allowed with any
 		# company name.
 		case $cpu in
-			1750a | 580 \
+			  1750a \
+			| 580 \
+			| [cjt]90 \
 			| a29k \
-			| aarch64 | aarch64_be | aarch64c | arm64e | arm64ec \
+			| aarch64 \
+			| aarch64_be \
+			| aarch64c \
 			| abacus \
-			| alpha | alphaev[4-8] | alphaev56 | alphaev6[78] \
-			| alpha64 | alpha64ev[4-8] | alpha64ev56 | alpha64ev6[78] \
-			| alphapca5[67] | alpha64pca5[67] \
+			| alpha \
+			| alpha64 \
+			| alpha64ev56 \
+			| alpha64ev6[78] \
+			| alpha64ev[4-8] \
+			| alpha64pca5[67] \
+			| alphaev56 \
+			| alphaev6[78] \
+			| alphaev[4-8] \
+			| alphapca5[67] \
 			| am33_2.0 \
 			| amdgcn \
-			| arc | arceb | arc32 | arc64 \
-			| arm | arm[lb]e | arme[lb] | armv* \
-			| avr | avr32 \
+			| arc \
+			| arc32 \
+			| arc64 \
+			| arceb \
+			| arm \
+			| arm64e \
+			| arm64ec \
+			| arm[lb]e \
+			| arme[lb] \
+			| armv* \
 			| asmjs \
+			| avr \
+			| avr32 \
 			| ba \
-			| be32 | be64 \
-			| bfin | bpf | bs2000 \
-			| c[123]* | c30 | [cjt]90 | c4x \
-			| c8051 | clipper | craynv | csky | cydra \
-			| d10v | d30v | dlx | dsp16xx \
-			| e2k | elxsi | epiphany \
-			| f30[01] | f700 | fido | fr30 | frv | ft32 | fx80 \
-			| javascript \
-			| h8300 | h8500 \
-			| hppa | hppa1.[01] | hppa2.0 | hppa2.0[nw] | hppa64 \
+			| be32 \
+			| be64 \
+			| bfin \
+			| bpf \
+			| bs2000 \
+			| c30 \
+			| c4x \
+			| c8051 \
+			| c[123]* \
+			| clipper \
+			| craynv \
+			| csky \
+			| cydra \
+			| d10v \
+			| d30v \
+			| dlx \
+			| dsp16xx \
+			| e2k \
+			| elxsi \
+			| epiphany \
+			| f30[01] \
+			| f700 \
+			| fido \
+			| fr30 \
+			| frv \
+			| ft32 \
+			| fx80 \
+			| h8300 \
+			| h8500 \
 			| hexagon \
-			| i370 | i*86 | i860 | i960 | ia16 | ia64 \
-			| ip2k | iq2000 \
+			| hppa \
+			| hppa1.[01] \
+			| hppa2.0 \
+			| hppa2.0[nw] \
+			| hppa64 \
+			| i*86 \
+			| i370 \
+			| i860 \
+			| i960 \
+			| ia16 \
+			| ia64 \
+			| ip2k \
+			| iq2000 \
+			| javascript \
 			| k1om \
 			| kvx \
-			| le32 | le64 \
+			| le32 \
+			| le64 \
 			| lm32 \
-			| loongarch32 | loongarch64 \
-			| m32c | m32r | m32rle \
-			| m5200 | m68000 | m680[012346]0 | m68360 | m683?2 | m68k \
-			| m6811 | m68hc11 | m6812 | m68hc12 | m68hcs12x \
-			| m88110 | m88k | maxq | mb | mcore | mep | metag \
-			| microblaze | microblazeel \
+			| loongarch32 \
+			| loongarch64 \
+			| m32c \
+			| m32r \
+			| m32rle \
+			| m5200 \
+			| m68000 \
+			| m680[012346]0 \
+			| m6811 \
+			| m6812 \
+			| m68360 \
+			| m683?2 \
+			| m68hc11 \
+			| m68hc12 \
+			| m68hcs12x \
+			| m68k \
+			| m88110 \
+			| m88k \
+			| maxq \
+			| mb \
+			| mcore \
+			| mep \
+			| metag \
+			| microblaze \
+			| microblazeel \
 			| mips* \
 			| mmix \
-			| mn10200 | mn10300 \
+			| mn10200 \
+			| mn10300 \
 			| moxie \
-			| mt \
 			| msp430 \
+			| mt \
 			| nanomips* \
-			| nds32 | nds32le | nds32be \
+			| nds32 \
+			| nds32be \
+			| nds32le \
 			| nfp \
-			| nios | nios2 | nios2eb | nios2el \
-			| none | np1 | ns16k | ns32k | nvptx \
+			| nios \
+			| nios2 \
+			| nios2eb \
+			| nios2el \
+			| none \
+			| np1 \
+			| ns16k \
+			| ns32k \
+			| nvptx \
 			| open8 \
 			| or1k* \
 			| or32 \
 			| orion \
+			| pdp10 \
+			| pdp11 \
 			| picochip \
-			| pdp10 | pdp11 | pj | pjl | pn | power \
-			| powerpc | powerpc64 | powerpc64le | powerpcle | powerpcspe \
+			| pj \
+			| pjl \
+			| pn \
+			| power \
+			| powerpc \
+			| powerpc64 \
+			| powerpc64le \
+			| powerpcle \
+			| powerpcspe \
 			| pru \
 			| pyramid \
-			| riscv | riscv32 | riscv32be | riscv64 | riscv64be \
-			| rl78 | romp | rs6000 | rx \
-			| s390 | s390x \
+			| riscv \
+			| riscv32 \
+			| riscv32be \
+			| riscv64 \
+			| riscv64be \
+			| rl78 \
+			| romp \
+			| rs6000 \
+			| rx \
+			| s390 \
+			| s390x \
 			| score \
-			| sh | shl \
-			| sh[1234] | sh[24]a | sh[24]ae[lb] | sh[23]e | she[lb] | sh[lb]e \
-			| sh[1234]e[lb] |  sh[12345][lb]e | sh[23]ele | sh64 | sh64le \
-			| sparc | sparc64 | sparc64b | sparc64v | sparc86x | sparclet \
+			| sh \
+			| sh64 \
+			| sh64le \
+			| sh[12345][lb]e \
+			| sh[1234] \
+			| sh[1234]e[lb] \
+			| sh[23]e \
+			| sh[23]ele \
+			| sh[24]a \
+			| sh[24]ae[lb] \
+			| sh[lb]e \
+			| she[lb] \
+			| shl \
+			| sparc \
+			| sparc64 \
+			| sparc64b \
+			| sparc64v \
+			| sparc86x \
+			| sparclet \
 			| sparclite \
-			| sparcv8 | sparcv9 | sparcv9b | sparcv9v | sv1 | sx* \
+			| sparcv8 \
+			| sparcv9 \
+			| sparcv9b \
+			| sparcv9v \
 			| spu \
+			| sv1 \
+			| sx* \
 			| tahoe \
 			| thumbv7* \
-			| tic30 | tic4x | tic54x | tic55x | tic6x | tic80 \
+			| tic30 \
+			| tic4x \
+			| tic54x \
+			| tic55x \
+			| tic6x \
+			| tic80 \
 			| tron \
 			| ubicom32 \
-			| v70 | v850 | v850e | v850e1 | v850es | v850e2 | v850e2v3 \
+			| v70 \
+			| v850 \
+			| v850e \
+			| v850e1 \
+			| v850e2 \
+			| v850e2v3 \
+			| v850es \
 			| vax \
 			| vc4 \
 			| visium \
 			| w65 \
-			| wasm32 | wasm64 \
+			| wasm32 \
+			| wasm64 \
 			| we32k \
-			| x86 | x86_64 | xc16x | xgate | xps100 \
-			| xstormy16 | xtensa* \
+			| x86 \
+			| x86_64 \
+			| xc16x \
+			| xgate \
+			| xps100 \
+			| xstormy16 \
+			| xtensa* \
 			| ymp \
-			| z8k | z80)
+			| z80 \
+			| z8k)
 				;;
 
 			*)
@@ -1732,40 +1921,187 @@ case $os in
 	ghcjs)
 		;;
 	# Now accept the basic system types.
-	# The portable systems comes first.
 	# Each alternative MUST end in a * to match a version number.
-	gnu* | android* | bsd* | mach* | minix* | genix* | ultrix* | irix* \
-	     | *vms* | esix* | aix* | cnk* | sunos | sunos[34]* \
-	     | hpux* | unos* | osf* | luna* | dgux* | auroraux* | solaris* \
-	     | sym* |  plan9* | psp* | sim* | xray* | os68k* | v88r* \
-	     | hiux* | abug | nacl* | netware* | windows* \
-	     | os9* | macos* | osx* | ios* | tvos* | watchos* \
-	     | mpw* | magic* | mmixware* | mon960* | lnews* \
-	     | amigaos* | amigados* | msdos* | newsos* | unicos* | aof* \
-	     | aos* | aros* | cloudabi* | sortix* | twizzler* \
-	     | nindy* | vxsim* | vxworks* | ebmon* | hms* | mvs* \
-	     | clix* | riscos* | uniplus* | iris* | isc* | rtu* | xenix* \
-	     | mirbsd* | netbsd* | dicos* | openedition* | ose* \
-	     | bitrig* | openbsd* | secbsd* | solidbsd* | libertybsd* | os108* \
-	     | ekkobsd* | freebsd* | riscix* | lynxos* | os400* \
-	     | bosx* | nextstep* | cxux* | oabi* \
-	     | ptx* | ecoff* | winnt* | domain* | vsta* \
-	     | udi* | lites* | ieee* | go32* | aux* | hcos* \
-	     | chorusrdb* | cegcc* | glidix* | serenity* \
-	     | cygwin* | msys* | moss* | proelf* | rtems* \
-	     | midipix* | mingw32* | mingw64* | mint* \
-	     | uxpv* | beos* | mpeix* | udk* | moxiebox* \
-	     | interix* | uwin* | mks* | rhapsody* | darwin* \
-	     | openstep* | oskit* | conix* | pw32* | nonstopux* \
-	     | storm-chaos* | tops10* | tenex* | tops20* | its* \
-	     | os2* | vos* | palmos* | uclinux* | nucleus* | morphos* \
-	     | scout* | superux* | sysv* | rtmk* | tpf* | windiss* \
-	     | powermax* | dnix* | nx6 | nx7 | sei* | dragonfly* \
-	     | skyos* | haiku* | rdos* | toppers* | drops* | es* \
-	     | onefs* | tirtos* | phoenix* | fuchsia* | redox* | bme* \
-	     | midnightbsd* | amdhsa* | unleashed* | emscripten* | wasi* \
-	     | nsk* | powerunix* | genode* | zvmoe* | qnx* | emx* | zephyr* \
-	     | fiwix* | mlibc* | cos* | mbr* | ironclad* | ohos* | l4re* )
+	  abug \
+	| aix* \
+	| amdhsa* \
+	| amigados* \
+	| amigaos* \
+	| android* \
+	| aof* \
+	| aos* \
+	| aros* \
+	| auroraux* \
+	| aux* \
+	| beos* \
+	| bitrig* \
+	| bme* \
+	| bosx* \
+	| bsd* \
+	| cegcc* \
+	| chorusrdb* \
+	| clix* \
+	| cloudabi* \
+	| cnk* \
+	| conix* \
+	| cos* \
+	| cxux* \
+	| cygwin* \
+	| darwin* \
+	| dgux* \
+	| dicos* \
+	| dnix* \
+	| domain* \
+	| dragonfly* \
+	| drops* \
+	| ebmon* \
+	| ecoff* \
+	| ekkobsd* \
+	| emscripten* \
+	| emx* \
+	| es* \
+	| fiwix* \
+	| freebsd* \
+	| fuchsia* \
+	| genix* \
+	| genode* \
+	| glidix* \
+	| gnu* \
+	| go32* \
+	| haiku* \
+	| hcos* \
+	| hiux* \
+	| hms* \
+	| hpux* \
+	| ieee* \
+	| interix* \
+	| ios* \
+	| iris* \
+	| irix* \
+	| ironclad* \
+	| isc* \
+	| its* \
+	| l4re* \
+	| libertybsd* \
+	| lites* \
+	| lnews* \
+	| luna* \
+	| lynxos* \
+	| mach* \
+	| macos* \
+	| magic* \
+	| mbr* \
+	| midipix* \
+	| midnightbsd* \
+	| mingw32* \
+	| mingw64* \
+	| minix* \
+	| mint* \
+	| mirbsd* \
+	| mks* \
+	| mlibc* \
+	| mmixware* \
+	| mon960* \
+	| morphos* \
+	| moss* \
+	| moxiebox* \
+	| mpeix* \
+	| mpw* \
+	| msdos* \
+	| msys* \
+	| mvs* \
+	| nacl* \
+	| netbsd* \
+	| netware* \
+	| newsos* \
+	| nextstep* \
+	| nindy* \
+	| nonstopux* \
+	| nsk* \
+	| nucleus* \
+	| nx6 \
+	| nx7 \
+	| oabi* \
+	| ohos* \
+	| onefs* \
+	| openbsd* \
+	| openedition* \
+	| openstep* \
+	| os108* \
+	| os2* \
+	| os400* \
+	| os68k* \
+	| os9* \
+	| ose* \
+	| osf* \
+	| oskit* \
+	| osx* \
+	| palmos* \
+	| phoenix* \
+	| plan9* \
+	| powermax* \
+	| powerunix* \
+	| proelf* \
+	| psp* \
+	| ptx* \
+	| pw32* \
+	| qnx* \
+	| rdos* \
+	| redox* \
+	| rhapsody* \
+	| riscix* \
+	| riscos* \
+	| rtems* \
+	| rtmk* \
+	| rtu* \
+	| scout* \
+	| secbsd* \
+	| sei* \
+	| serenity* \
+	| sim* \
+	| skyos* \
+	| solaris* \
+	| solidbsd* \
+	| sortix* \
+	| storm-chaos* \
+	| sunos \
+	| sunos[34]* \
+	| superux* \
+	| sym* \
+	| sysv* \
+	| tenex* \
+	| tirtos* \
+	| toppers* \
+	| tops10* \
+	| tops20* \
+	| tpf* \
+	| tvos* \
+	| twizzler* \
+	| uclinux* \
+	| udi* \
+	| udk* \
+	| ultrix* \
+	| unicos* \
+	| uniplus* \
+	| unleashed* \
+	| unos* \
+	| uwin* \
+	| uxpv* \
+	| v88r* \
+	|*vms* \
+	| vos* \
+	| vsta* \
+	| vxsim* \
+	| vxworks* \
+	| wasi* \
+	| watchos* \
+	| windiss* \
+	| windows* \
+	| winnt* \
+	| xenix* \
+	| xray* \
+	| zephyr* \
+	| zvmoe* )
 		;;
 	# This one is extra strict with allowed versions
 	sco3.2v2 | sco3.2v[4-9]* | sco5v6*)
