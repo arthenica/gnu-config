@@ -171,6 +171,8 @@ be64-none					be64-unknown-none
 bfin						bfin-unknown-none
 bfin-elf					bfin-unknown-elf
 blackfin					bfin-unknown-linux-gnu
+blackfin-elf					bfin-unknown-elf
+blackfin-linux					bfin-unknown-linux-gnu
 bpf						bpf-unknown-none
 bpf-elf						bpf-unknown-elf
 c1						c1-convex-bsd
@@ -430,6 +432,8 @@ m68k-mint					m68k-atari-mint
 m68k-next-openstep3				m68k-next-openstep3
 m68k-next-openstep4				m68k-next-openstep4
 m68knommu					m68k-unknown-linux-gnu
+m68knommu-elf					m68k-unknown-elf
+m68knommu-linux					m68k-unknown-linux-gnu
 m88k						m88k-unknown-none
 m88k-omron					m88k-omron-luna
 m9s12z						s12z-unknown-none
@@ -621,6 +625,9 @@ ose68k						m68k-ericsson-ose
 pa-hitachi					hppa1.1-hitachi-hiuxwe2
 paragon						i860-intel-osf
 parisc						hppa-unknown-linux-gnu
+parisc-hiux					hppa-hitachi-hiuxwe2
+parisc-hpux					hppa-hp-hpux
+parisc-linux					hppa-unknown-linux-gnu
 pbb						m68k-tti-sysv3
 pbd						sparc-tti-sysv3
 pc532						ns32k-pc532-none

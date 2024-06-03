@@ -1093,7 +1093,7 @@ case $cpu-$vendor in
 		;;
 	blackfin-*)
 		cpu=bfin
-		basic_os=linux
+		basic_os=${basic_os:-linux}
 		;;
 	c54x-*)
 		cpu=tic54x
@@ -1116,7 +1116,7 @@ case $cpu-$vendor in
 		;;
 	m68knommu-*)
 		cpu=m68k
-		basic_os=linux
+		basic_os=${basic_os:-linux}
 		;;
 	m9s12z-* | m68hcs12z-* | hcs12z-* | s12z-*)
 		cpu=s12z
@@ -1126,7 +1126,7 @@ case $cpu-$vendor in
 		;;
 	parisc-*)
 		cpu=hppa
-		basic_os=linux
+		basic_os=${basic_os:-linux}
 		;;
 	pentium-* | p5-* | k5-* | k6-* | nexgen-* | viac3-*)
 		cpu=i586
