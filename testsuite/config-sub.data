@@ -774,6 +774,12 @@ shle-elf					shle-unknown-elf
 simso-wrs					sparclite-wrs-vxworks
 sparc						sparc-sun-sunos4.1.1
 sparc-haiku					sparc-unknown-haiku
+sparc-solaris					sparc-sun-solaris2
+sparc-solaris1					sparc-sun-sunos4
+sparc-sunos					sparc-sun-sunos
+sparc-sunos4					sparc-sun-sunos4
+sparc-sunos5					sparc-sun-solaris2
+sparc-sunos6					sparc-sun-solaris3
 sparc-zephyr					sparc-unknown-zephyr
 sparc64						sparc64-unknown-none
 sparc64-linux					sparc64-unknown-linux-gnu
@@ -781,7 +787,7 @@ sparc64b					sparc64b-unknown-none
 sparc64b-linux					sparc64b-unknown-linux-gnu
 sparc64v					sparc64v-unknown-none
 sparc64v-elf					sparc64v-unknown-elf
-sparc64v-solaris2.9				sparc64v-unknown-solaris2.9
+sparc64v-solaris2.9				sparc64v-sun-solaris2.9
 sparc86x					sparc86x-unknown-none
 sparclet					sparclet-unknown-none
 sparclite					sparclite-unknown-none
@@ -791,7 +797,7 @@ sparcv9						sparcv9-unknown-none
 sparcv9b					sparcv9b-unknown-none
 sparcv9v					sparcv9v-unknown-none
 sparcv9v-elf					sparcv9v-unknown-elf
-sparcv9v-solaris2.9				sparcv9v-unknown-solaris2.9
+sparcv9v-solaris2.9				sparcv9v-sun-solaris2.9
 sps7						m68k-bull-sysv2
 spu						spu-unknown-elf
 spu-elf						spu-unknown-elf

@@ -2240,7 +2240,7 @@ case $vendor in
 			*-riscix*)
 				vendor=acorn
 				;;
-			*-sunos*)
+			*-sunos* | *-solaris*)
 				vendor=sun
 				;;
 			*-cnk* | *-aix*)
