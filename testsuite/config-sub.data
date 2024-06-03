@@ -221,8 +221,14 @@ delta88						m88k-motorola-sysv3
 dicos						i686-pc-dicos
 djgpp						i586-pc-msdosdjgpp
 dlx						dlx-unknown-none
-dpx20-bull					m68k-bull-sysv3
-dpx2xxx						m68k-bull-sysv3
+dpx2						m68k-bull-sysv3
+dpx20						rs6000-bull-bosx
+dpx2100						i386-bull-sysv3
+dpx21xx						i386-bull-sysv3
+dpx2200						m68k-bull-sysv3
+dpx22xx						m68k-bull-sysv3
+dpx2300						m68k-bull-sysv3
+dpx23xx						m68k-bull-sysv3
 dsp16xx						dsp16xx-unknown-none
 e2k						e2k-unknown-none
 e2k-linux					e2k-unknown-linux-gnu
@@ -282,6 +288,7 @@ i386-386bsd					i386-pc-bsd
 i386-aros					i386-pc-aros
 i386-bitrig					i386-pc-bitrig
 i386-bsd					i386-pc-bsd
+i386-bull					i386-bull-sysv3
 i386-cloudabi					i386-pc-cloudabi
 i386-drops1.0					i386-pc-drops1.0
 i386-elf					i386-pc-elf
@@ -394,6 +401,7 @@ m68000						m68000-unknown-none
 m68000-sun					m68000-sun-sunos3
 m68hcs12z					s12z-unknown-none
 m68k						m68k-unknown-none
+m68k-bull					m68k-bull-sysv3
 m68k-es1800					m68k-unknown-ose
 m68k-mint					m68k-atari-mint
 m68k-next-openstep3				m68k-next-openstep3
@@ -694,6 +702,7 @@ roadrunner					i386-sun-sunos4.0.2
 rom68k						m68k-rom68k-coff
 romp						romp-ibm-aix
 rs6000						rs6000-ibm-aix
+rs6000-bull					rs6000-bull-bosx
 rx						rx-unknown-none
 rx-linux					rx-unknown-linux-gnu
 s12z						s12z-unknown-none

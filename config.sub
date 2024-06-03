@@ -4,7 +4,7 @@
 
 # shellcheck disable=SC2006,SC2268,SC2162 # see below for rationale
 
-timestamp='2024-03-12'
+timestamp='2024-05-27'
 
 # This file is free software; you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by
@@ -195,6 +195,7 @@ case $1 in
 					| apple \
 					| att* \
 					| axis \
+					| bull \
 					| c[123]* \
 					| cbm \
 					| cisco \
@@ -771,10 +772,22 @@ case $basic_machine in
 		cpu=m68k
 		vendor=motorola
 		;;
-	dpx2*)
+	# This used to be dpx2*, but that gets the RS6000-based
+	# DPX/20 and the x86-based DPX/2-100 wrong.  See
+	# https://oldskool.silicium.org/stations/bull_dpx20.htm
+	# https://www.feb-patrimoine.com/english/bull_dpx2.htm
+	# https://www.feb-patrimoine.com/english/unix_and_bull.htm
+	dpx2 | dpx2[23]00 | dpx2[23]xx)
 		cpu=m68k
 		vendor=bull
-		basic_os=sysv3
+		;;
+	dpx2100 | dpx21xx)
+		cpu=i386
+		vendor=bull
+		;;
+	dpx20)
+		cpu=rs6000
+		vendor=bull
 		;;
 	encore | umax | mmax)
 		cpu=ns32k
@@ -1077,9 +1090,13 @@ case $cpu-$vendor in
 		vendor=alt
 		basic_os=${basic_os:-linux-gnueabihf}
 		;;
-	dpx20-unknown | dpx20-bull)
-		cpu=rs6000
-		vendor=bull
+
+	# Normalized CPU+vendor pairs that imply an OS,
+	# if not otherwise specified
+	i386-bull | m68k-bull)
+		basic_os=${basic_os:-sysv3}
+		;;
+	rs6000-bull)
 		basic_os=${basic_os:-bosx}
 		;;
 
