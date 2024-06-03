@@ -302,6 +302,8 @@ hp9k893						hppa1.1-hp-hpux
 hppa						hppa-unknown-none
 hppa-next					hppa-next-nextstep
 hppa1.0						hppa1.0-unknown-none
+hppa1.0-hitachi					hppa1.0-hitachi-hiuxwe2
+hppa1.1-hitachi					hppa1.1-hitachi-hiuxwe2
 hppa2.0						hppa2.0-unknown-none
 hppa2.0n					hppa2.0n-unknown-none
 hppa64						hppa64-unknown-none
@@ -449,6 +451,7 @@ m68knommu					m68k-unknown-linux-gnu
 m68knommu-elf					m68k-unknown-elf
 m68knommu-linux					m68k-unknown-linux-gnu
 m88k						m88k-unknown-none
+m88k-harris					m88k-harris-sysv3
 m88k-omron					m88k-omron-luna
 m9s12z						s12z-unknown-none
 mac						m68k-apple-macos
@@ -477,7 +480,14 @@ mingw32ce					arm-unknown-mingw32ce
 mingw64						x86_64-pc-mingw64
 miniframe					m68000-convergent-sysv
 mips						mips-unknown-elf
+mips-digital					mips-dec-ultrix4.2
 mips-sde-elf					mips-sde-elf
+mips-sgi					mips-sgi-irix
+mips-siemens					mips-siemens-sysv4
+mips-sinix					mips-sni-sysv4
+mips-sinix5					mips-sni-sysv4
+mips-sinix5.0					mips-sni-sysv5.0
+mips-sni					mips-sni-sysv4
 mips-zephyr					mips-unknown-zephyr
 mips16						mips16-unknown-elf
 mips64						mips64-unknown-elf

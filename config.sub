@@ -209,6 +209,7 @@ case $1 in
 					| dec* \
 					| delta* \
 					| dg \
+					| digital \
 					| dolphin \
 					| encore* \
 					| gould \
@@ -231,8 +232,10 @@ case $1 in
 					| omron* \
 					| pc533* \
 					| sequent* \
+					| siemens \
 					| sgi* \
 					| sim \
+					| sni \
 					| sony* \
 					| sun \
 					| sun[234]* \
@@ -1066,13 +1069,27 @@ case $cpu-$vendor in
 		basic_os=${basic_os:-linux-gnueabihf}
 		;;
 
-	# Normalized CPU+vendor pairs that imply an OS,
-	# if not otherwise specified
+	# Normalized CPU+vendor pairs that imply an OS, if not otherwise specified
+	m68k-isi)
+		basic_os=${basic_os:-sysv}
+		;;
+	m68k-sony)
+		basic_os=${basic_os:-newsos}
+		;;
+	m68k-tektronix)
+		basic_os=${basic_os:-bsd}
+		;;
+	m88k-harris)
+		basic_os=${basic_os:-sysv3}
+		;;
 	i386-bull | m68k-bull)
 		basic_os=${basic_os:-sysv3}
 		;;
 	rs6000-bull)
 		basic_os=${basic_os:-bosx}
+		;;
+	mips-sni)
+		basic_os=${basic_os:-sysv4}
 		;;
 
 	# Here we normalize CPU types irrespective of the vendor
@@ -1613,6 +1630,7 @@ case $os in
 		;;
 	utek*)
 		os=bsd
+		vendor=`echo "$vendor" | sed -e 's|^unknown$|tektronix|'`
 		;;
 	dynix*)
 		os=bsd
@@ -1629,7 +1647,11 @@ case $os in
 	386bsd)
 		os=bsd
 		;;
-	ctix* | uts*)
+	ctix*)
+		os=sysv
+		vendor=`echo "$vendor" | sed -e 's|^unknown$|convergent|'`
+		;;
+	uts*)
 		os=sysv
 		;;
 	nova*)
@@ -1639,9 +1661,11 @@ case $os in
 	# Preserve the version number of sinix5.
 	sinix5.*)
 		os=`echo "$os" | sed -e 's|sinix|sysv|'`
+		vendor=`echo "$vendor" | sed -e 's|^unknown$|sni|'`
 		;;
 	sinix*)
 		os=sysv4
+		vendor=`echo "$vendor" | sed -e 's|^unknown$|sni|'`
 		;;
 	tpf*)
 		os=tpf
@@ -1782,6 +1806,14 @@ case $cpu-$vendor in
 		os=
 		obj=elf
 		;;
+	# The -sgi and -siemens entries must be before the mips- entry
+	# or we get the wrong os.
+	*-sgi)
+		os=irix
+		;;
+	*-siemens)
+		os=sysv4
+		;;
 	mips*-cisco)
 		os=
 		obj=elf
@@ -1794,7 +1826,8 @@ case $cpu-$vendor in
 		os=
 		obj=coff
 		;;
-	*-tti)	# must be before sparc entry or we get the wrong os.
+	# This must be before the sparc-* entry or we get the wrong os.
+	*-tti)
 		os=sysv3
 		;;
 	sparc-* | *-sun)
@@ -1826,7 +1859,7 @@ case $cpu-$vendor in
 		os=hpux
 		;;
 	*-hitachi)
-		os=hiux
+		os=hiuxwe2
 		;;
 	i860-* | *-att | *-ncr | *-altos | *-motorola | *-convergent)
 		os=sysv
@@ -1869,12 +1902,6 @@ case $cpu-$vendor in
 		;;
 	*-encore)
 		os=bsd
-		;;
-	*-sgi)
-		os=irix
-		;;
-	*-siemens)
-		os=sysv4
 		;;
 	*-masscomp)
 		os=rtu
