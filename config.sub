@@ -1633,7 +1633,8 @@ case $os in
 		os=sysv
 		;;
 	nova*)
-		os=rtmk-nova
+		kernel=rtmk
+		os=nova
 		;;
 	# Preserve the version number of sinix5.
 	sinix5.*)
@@ -2017,6 +2018,7 @@ case $os in
 	| nextstep* \
 	| nindy* \
 	| nonstopux* \
+	| nova* \
 	| nsk* \
 	| nucleus* \
 	| nx6 \
@@ -2196,6 +2198,8 @@ case $kernel-$os-$obj in
 	nto-qnx*-)
 		;;
 	os2-emx-)
+		;;
+	rtmk-nova-)
 		;;
 	*-eabi*- | *-gnueabi*-)
 		;;
