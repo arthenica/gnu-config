@@ -170,8 +170,12 @@ case $1 in
 		esac
 		;;
 	*-*)
-		# A lone config we happen to match not fitting any pattern
 		case $field1-$field2 in
+			# Shorthands that happen to contain a single dash
+			convex-c[12] | convex-c3[248])
+				basic_machine=$field2-convex
+				basic_os=
+				;;
 			decstation-3100)
 				basic_machine=mips-dec
 				basic_os=
@@ -196,7 +200,6 @@ case $1 in
 					| att* \
 					| axis \
 					| bull \
-					| c[123]* \
 					| cbm \
 					| cisco \
 					| convergent* \
@@ -325,26 +328,6 @@ case $1 in
 			cegcc)
 				basic_machine=arm-unknown
 				basic_os=cegcc
-				;;
-			convex-c1)
-				basic_machine=c1-convex
-				basic_os=bsd
-				;;
-			convex-c2)
-				basic_machine=c2-convex
-				basic_os=bsd
-				;;
-			convex-c32)
-				basic_machine=c32-convex
-				basic_os=bsd
-				;;
-			convex-c34)
-				basic_machine=c34-convex
-				basic_os=bsd
-				;;
-			convex-c38)
-				basic_machine=c38-convex
-				basic_os=bsd
 				;;
 			cray)
 				basic_machine=j90-cray
@@ -1036,8 +1019,12 @@ unset -v basic_machine
 
 # Decode basic machines in the full and proper CPU-Company form.
 case $cpu-$vendor in
-	# Here we handle the default manufacturer of certain CPU types in canonical form. It is in
-	# some cases the only manufacturer, in others, it is the most popular.
+	# Here we handle the default manufacturer of certain CPU types in canonical form.
+	# It is in some cases the only manufacturer, in others, it is the most popular.
+	c[12]-convex | c[12]-unknown | c3[248]-convex | c3[248]-unknown)
+		vendor=convex
+		basic_os=${basic_os:-bsd}
+		;;
 	craynv-unknown)
 		vendor=cray
 		basic_os=${basic_os:-unicosmp}
