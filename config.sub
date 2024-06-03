@@ -1128,9 +1128,6 @@ case $cpu-$vendor in
 	pentium4-*)
 		cpu=i786
 		;;
-	pc98-*)
-		cpu=i386
-		;;
 	ppc-* | ppcbe-*)
 		cpu=powerpc
 		;;
@@ -1163,9 +1160,6 @@ case $cpu-$vendor in
 		;;
 	tx39el-*)
 		cpu=mipstx39el
-		;;
-	x64-*)
-		cpu=x86_64
 		;;
 	xscale-* | xscalee[bl]-*)
 		cpu=`echo "$cpu" | sed 's/^xscale/arm/'`
