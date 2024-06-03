@@ -885,18 +885,6 @@ case $basic_machine in
 	next | m*-next)
 		cpu=m68k
 		vendor=next
-		case $basic_os in
-		    openstep*)
-		        ;;
-		    nextstep*)
-			;;
-		    ns2*)
-		      basic_os=nextstep2
-			;;
-		    *)
-		      basic_os=nextstep3
-			;;
-		esac
 		;;
 	np1)
 		cpu=np1
@@ -1544,6 +1532,23 @@ case $os in
 	unixware*)
 		os=sysv4.2uw
 		;;
+	# The marketing names for NeXT's operating systems were
+	# NeXTSTEP, NeXTSTEP 2, OpenSTEP 3, OpenSTEP 4.  'openstep' is
+	# mapped to 'openstep3', but 'openstep1' and 'openstep2' are
+	# mapped to 'nextstep' and 'nextstep2', consistent with the
+	# treatment of SunOS/Solaris.
+	ns | ns1 | nextstep | nextstep1 | openstep1)
+		os=nextstep
+		;;
+	ns2 | nextstep2 | openstep2)
+		os=nextstep2
+		;;
+	ns3 | nextstep3 | openstep | openstep3)
+		os=openstep3
+		;;
+	ns4 | nextstep4 | openstep4)
+		os=openstep4
+		;;
 	# es1800 is here to avoid being matched by es* (a different OS)
 	es1800*)
 		os=ose
@@ -1635,9 +1640,6 @@ case $os in
 		;;
 	nova*)
 		os=rtmk-nova
-		;;
-	ns2)
-		os=nextstep2
 		;;
 	# Preserve the version number of sinix5.
 	sinix5.*)
