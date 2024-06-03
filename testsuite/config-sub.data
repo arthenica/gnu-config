@@ -112,7 +112,7 @@ arm64-apple-watchos5.0				aarch64-apple-watchos5.0
 arm64e-apple-darwin20.0.0			arm64e-apple-darwin20.0.0
 arm64e-apple-ios				arm64e-apple-ios
 arm64ec-pc-mingw32				arm64ec-pc-mingw32
-arm64ec-windows 				arm64ec-unknown-windows
+arm64ec-windows					arm64ec-unknown-windows
 armbe						armbe-unknown-none
 armeb-unknown-netbsdelf7.0			armeb-unknown-netbsdelf7.0
 armel						armel-unknown-none
@@ -142,8 +142,8 @@ armv7eb-unknown-netbsdelf7.0			armv7eb-unknown-netbsdelf7.0
 armv7eb-unknown-netbsdelf7.0-eabi		armv7eb-unknown-netbsdelf7.0-eabi
 armv7eb-unknown-netbsdelf7.0-eabihf		armv7eb-unknown-netbsdelf7.0-eabihf
 armv7m						armv7m-unknown-none
-armv7m-unknown-none-eabi				armv7m-unknown-none-eabi
-armv7m-wrs-vxworks-eabihf				armv7m-wrs-vxworks-eabihf
+armv7m-unknown-none-eabi			armv7m-unknown-none-eabi
+armv7m-wrs-vxworks-eabihf			armv7m-wrs-vxworks-eabihf
 armv7r						armv7r-unknown-none
 armv8a						armv8a-unknown-none
 armv8b-linux-gnueabi				armv8b-unknown-linux-gnueabi
@@ -208,7 +208,7 @@ d10v						d10v-unknown-none
 d30v						d30v-unknown-none
 da30						m68k-da30-none
 dec10						pdp10-dec-tops10
-dec20					pdp10-dec-tops20
+dec20						pdp10-dec-tops20
 dec3100						mips-dec-ultrix4.2
 decstation					mips-dec-ultrix4.2
 decstation-3100					mips-dec-ultrix4.2
@@ -262,11 +262,11 @@ hexagon-linux					hexagon-unknown-linux-gnu
 hp300						m68k-hp-hpux
 hp300bsd					m68k-hp-bsd
 hp300hpux					m68k-hp-hpux
-hp3k900 					hppa1.0-hp-hpux
+hp3k900						hppa1.0-hp-hpux
 hp893						hppa1.1-hp-hpux
 hp900						hppa1.0-hp-hpux
-hp9k200 					m68000-hp-hpux
-hp9k310 					m68000-hp-hpux
+hp9k200						m68000-hp-hpux
+hp9k310						m68000-hp-hpux
 hp9k893						hppa1.1-hp-hpux
 hppa						hppa-unknown-none
 hppa-next					hppa-next-nextstep
@@ -417,8 +417,8 @@ metag						metag-unknown-none
 metag-linux					metag-unknown-linux-gnu
 microblaze					microblaze-xilinx-none
 microblaze-elf					microblaze-xilinx-elf
-microblaze-unknown-elf				microblaze-xilinx-elf
 microblaze-linux				microblaze-xilinx-linux-gnu
+microblaze-unknown-elf				microblaze-xilinx-elf
 microblazeel					microblazeel-xilinx-none
 microblazeel-elf				microblazeel-xilinx-elf
 microblazeel-foobar-elf				microblazeel-foobar-elf
@@ -622,7 +622,7 @@ powerpc-haiku					powerpc-unknown-haiku
 powerpc-pikeos					powerpc-unknown-elf
 powerpc-sysgo-pikeos				powerpc-sysgo-elf
 powerpc-wrs-vxworks				powerpc-wrs-vxworks
-powerpc-wrs-vxworks-spe			powerpc-wrs-vxworks-spe
+powerpc-wrs-vxworks-spe				powerpc-wrs-vxworks-spe
 powerpc-xcoff-lynxos178				powerpc-xcoff-lynxos178
 powerpc64					powerpc64-unknown-none
 powerpc64-wrs-vxworks				powerpc64-wrs-vxworks
@@ -905,7 +905,7 @@ x86_64-qnx					x86_64-pc-qnx
 x86_64-redox					x86_64-pc-redox
 x86_64-secbsd					x86_64-pc-secbsd
 x86_64-sortix					x86_64-pc-sortix
-x86_64-twizzler				x86_64-pc-twizzler
+x86_64-twizzler					x86_64-pc-twizzler
 x86_64-unknown-ptx				x86_64-sequent-ptx
 x86_64-unknown-uefi				x86_64-unknown-uefi
 x86_64-windows					x86_64-pc-windows
