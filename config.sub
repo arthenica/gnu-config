@@ -2,7 +2,7 @@
 # Configuration validation subroutine script.
 #   Copyright 1992-2024 Free Software Foundation, Inc.
 
-# shellcheck disable=SC2006,SC2268 # see below for rationale
+# shellcheck disable=SC2006,SC2268,SC2162 # see below for rationale
 
 timestamp='2024-03-12'
 
@@ -120,7 +120,6 @@ case $# in
 esac
 
 # Split fields of configuration type
-# shellcheck disable=SC2162
 saved_IFS=$IFS
 IFS="-" read field1 field2 field3 field4 <<EOF
 $1
@@ -937,7 +936,6 @@ case $basic_machine in
 		;;
 
 	*-*)
-		# shellcheck disable=SC2162
 		saved_IFS=$IFS
 		IFS="-" read cpu vendor <<EOF
 $basic_machine
@@ -1307,7 +1305,6 @@ case $basic_os in
 		os=`echo "$basic_os" | sed -e 's|nto-qnx|qnx|'`
 		;;
 	*-*)
-		# shellcheck disable=SC2162
 		saved_IFS=$IFS
 		IFS="-" read kernel os <<EOF
 $basic_os
