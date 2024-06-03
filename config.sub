@@ -1031,7 +1031,7 @@ case $cpu-$vendor in
 		;;
 	c90-unknown | c90-cray)
 		vendor=cray
-		basic_os=${Basic_os:-unicos}
+		basic_os=${basic_os:-unicos}
 		;;
 	fx80-unknown)
 		vendor=alliant

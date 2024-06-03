@@ -203,6 +203,11 @@ c6x-unknown-elf					tic6x-unknown-elf
 c8051						c8051-unknown-elf
 c8051-elf					c8051-unknown-elf
 c90						c90-cray-unicos
+c90-cray					c90-cray-unicos
+c90-linux					c90-cray-linux-gnu
+c90-unicos					c90-cray-unicos
+c90-unknown-linux				c90-cray-linux-gnu
+c90-unknown-unicos				c90-cray-unicos
 cegcc						arm-unknown-cegcc
 clipper						clipper-unknown-none
 clipper-clix					clipper-intergraph-clix
