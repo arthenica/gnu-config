@@ -2181,7 +2181,7 @@ case $kernel-$os-$obj in
 		    | linux-mlibc*- | linux-musl*- | linux-newlib*- \
 		    | linux-relibc*- | linux-uclibc*- | linux-ohos*- )
 		;;
-	uclinux-uclibc*- )
+	uclinux-uclibc*- | uclinux-gnu*- )
 		;;
 	managarm-mlibc*- | managarm-kernel*- )
 		;;
@@ -2206,7 +2206,7 @@ case $kernel-$os-$obj in
 		echo "Invalid configuration '$1': '$os' needs 'windows'." 1>&2
 		exit 1
 		;;
-	kfreebsd*-gnu*- | kopensolaris*-gnu*-)
+	kfreebsd*-gnu*- | knetbsd*-gnu*- | netbsd*-gnu*- | kopensolaris*-gnu*-)
 		;;
 	vxworks-simlinux- | vxworks-simwindows- | vxworks-spe-)
 		;;
